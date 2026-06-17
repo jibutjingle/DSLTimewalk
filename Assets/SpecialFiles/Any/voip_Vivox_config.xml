@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VivoxConfigUnity xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Server>https://unity.vivox.com/appconfig/90709-test_-36160-udash</Server>
+	<Domain>mtu1xp.vivox.com</Domain>
+	<Issuer>90709-test_-36160-udash</Issuer>
+	<Key>AcyMCchJwCsrk7Zf5ALzkiCnM9EkSv7A</Key>
+	<IsEnvironmentCustom>false</IsEnvironmentCustom>
+	<IsTestMode>true</IsTestMode>
+	<AudibleDistance>64</AudibleDistance>
+	<ConversationalDistance>3</ConversationalDistance>
+	<AudioFadeIntensityByDistance>0.75</AudioFadeIntensityByDistance>
+	<AudioFadeModel>InverseByDistance</AudioFadeModel>
+	<VAD_Hangover>300</VAD_Hangover>
+	<VAD_NoiseFloor>576</VAD_NoiseFloor>
+	<VAD_Sensitivity>43</VAD_Sensitivity>
+	<VAD_Auto>true</VAD_Auto>
+	<UpdateFrequency>Update05Hz</UpdateFrequency>
+</VivoxConfigUnity>

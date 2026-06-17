@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 999ab83b61252de45b15286331e85c96
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_RoomNameTMPText: {instanceID: 0}
+  - lightsClip: {fileID: 8300000, guid: 2add4f7923556ac429424f972b00292b, type: 3}
+  - timeWalkTitle: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

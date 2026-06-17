@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: LocalizationSample_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 5e64e46bb0d2cbb45ae395b6a06117d3, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 894971142144
+    m_Localized: Could you speak a bit more slowly?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 991431745536
+    m_Localized: Bah! I hate this TV show!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1031130832896
+    m_Localized: Much better now!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1101834215424
+    m_Localized: What's this?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1108612210688
+    m_Localized: No no no!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1247795994624
+    m_Localized: I don't understand...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1056284106285056
+    m_Localized: Welcome to the localisation sample scene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1071589893332992
+    m_Localized: No!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1103555283902464
+    m_Localized: 'Selected language:'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

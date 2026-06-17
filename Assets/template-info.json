@@ -1,0 +1,15 @@
+{
+    "name": "com.dreamscape.free-roam-template-9.2.3",
+    "displayName": "Dreamscape 9.2.3",
+    "description": "Quickly and easily create VR content for a Dreamscape Free Roam system.",
+    "defaultScene": "Assets/Scenes/Scene One.unity",
+    "version": "9.2.3",
+    "category": "ProjectTemplate",
+    "host": "hub",
+    "type": "template",
+    "unity": "2022.3",
+    "dependencies": {
+        "com.unity.render-pipelines.universal": "14.0.6",
+        "com.artanim.common": "9.2.3"
+    }
+}

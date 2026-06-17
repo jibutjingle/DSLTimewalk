@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: 048d9345407d2ab46b5a430239eef515, type: 3}
+  title: Dreamscape Template
+  sections:
+  - heading: Welcome to the Dreamscape SDK
+    text: This template includes the settings and assets you need to start creating
+      a Dreamscape Free-roam Project.
+    linkText: 
+    url: 
+  loadedLayout: 0

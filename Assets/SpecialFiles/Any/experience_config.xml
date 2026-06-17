@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExperienceConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ExperienceMode="MultiPlayer" HasMatureContent="false" AllowAddPlayerWhileRunning="true" ServerFPS="120" LimitFPSOnHMDOffHead="true" SeatedExperience="false" ShutdownOnEndSession="false" LipsyncAudioGain="0.8" LipsyncSyncUpdatePeriod="0.05" EnableNativeHaptics="true" HideUIInClient="false" KeepFocusOnServerWindow="false" AllowClientSideGameProgress="true" ExperienceName="DSLTimewalk" LipsyncMode="Auto">
+	<StartScenes>
+		<Scene SceneName="TemplateTest" />
+		<Scene SceneName="Scene One" />
+		<Scene SceneName="Haptics Sample Scene" />
+		<Scene SceneName="Custom Messaging Sample Scene" />
+		<Scene SceneName="Avatar Generic Trigger Sample Scene" />
+		<Scene SceneName="Experience Trigger Sample Scene" />
+		<Scene SceneName="Localization Sample Scene" />
+		<Scene SceneName="Sync Transform Sample Scene" />
+		<Scene SceneName="Synced Timeline Sample Scene" />
+		<Scene SceneName="Tracked Props Sample Scene" />
+	</StartScenes>
+	<Avatars>
+		<Avatar Name="Jack" AvatarResource="Avatars/PFB_Jack" RigName="Mixamo" />
+	</Avatars>
+	<ExperienceProperties />
+	<TrackedProps />
+</ExperienceConfig>

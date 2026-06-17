@@ -1,0 +1,11 @@
+{
+    "ServerDomainName": "ec2-18-185-41-168.eu-central-1.compute.amazonaws.com",
+    "ServerPort": 7350,
+    "Scheme": "http",
+    "ServerKey": "1a19f450-41ca-41b0-8049-9763be59e54b",
+    "NakamaTimeoutSecs": 10,
+    "NakamaBaseDelayMillis": 1,
+    "NakamaMaxRetries": 5,
+    "ServerCredentialUser": "gameserver@dreamscapevr.com",
+    "ServerCredentialPassword": "m^3I8#X0gxWF"
+}

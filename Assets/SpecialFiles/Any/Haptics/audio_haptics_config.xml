@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AudioHapticsConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<!-- Default audio api.
+	Options are:
+	- XAudio2
+	- ASIO
+	- None to disable audio haptics
+	Can be overriden by command line parameter
+
+	For each of the Elements below, a corresponding entry must exist to set element specific parameters for the chosen api.
+	-->
+
+	<!-- <Audio api="None"/> -->
+	<!--  <Audio api="XAudio2"/>  -->
+	<!-- <Audio api="ASIO" driver="ASIO4ALL v2" showControlPanel="true"/> -->
+	<Audio api="ASIO" driver="Dante Virtual Soundcard (x64)" showControlPanel="false"/>
+
+	<Elements Gain="1" MuteWhenUnoccupied="true" Mute="false" IgnoreBoundingBox="false">
+		<Element Name="R1-C1" IgnoreBoundingBox="false" XMin="1.22" YMin="0.0" ZMin="1.22" XMax="2.44" YMax="0.2" ZMax="2.44">
+			<XAudio2 Device="DVS Transmit  1-2 (Dante Virtual Soundcard)" Channel="1" />
+			<ASIO ChannelName="Dante tx 1" />
+		</Element>
+		<Element Name="R2-C1" IgnoreBoundingBox="false" XMin="0.0" YMin="0.0" ZMin="1.22" XMax="1.22" YMax="0.2" ZMax="2.44">
+			<XAudio2 Device="DVS Transmit  1-2 (Dante Virtual Soundcard)" Channel="2" />
+			<ASIO ChannelName="Dante tx 2" />
+		</Element>
+		<Element Name="R3-C1" IgnoreBoundingBox="false" XMin="-1.22" YMin="0.0" ZMin="1.22" XMax="0.0" YMax="0.2" ZMax="2.44">
+			<XAudio2 Device="DVS Transmit  3-4 (Dante Virtual Soundcard)" Channel="1" />
+			<ASIO ChannelName="Dante tx 3" />
+		</Element>
+		<Element Name="R4-C1" IgnoreBoundingBox="false" XMin="-2.44" YMin="0.0" ZMin="1.22" XMax="-1.22" YMax="0.2" ZMax="2.44">
+			<XAudio2 Device="DVS Transmit  3-4 (Dante Virtual Soundcard)" Channel="2" />
+			<ASIO ChannelName="Dante tx 4" />
+		</Element>
+		<Element Name="R1-C2" IgnoreBoundingBox="false" XMin="1.22" YMin="0.0" ZMin="0.0" XMax="2.44" YMax="0.2" ZMax="1.22">
+			<XAudio2 Device="DVS Transmit  5-6 (Dante Virtual Soundcard)" Channel="1" />
+			<ASIO ChannelName="Dante tx 5" />
+		</Element>
+		<Element Name="R2-C2" IgnoreBoundingBox="false" XMin="0.0" YMin="0.0" ZMin="0.0" XMax="1.22" YMax="0.2" ZMax="1.22">
+			<XAudio2 Device="DVS Transmit  5-6 (Dante Virtual Soundcard)" Channel="2" />
+			<ASIO ChannelName="Dante tx 6" />
+		</Element>
+		<Element Name="R3-C2" IgnoreBoundingBox="false" XMin="-1.22" YMin="0.0" ZMin="0.0" XMax="0.0" YMax="0.2" ZMax="1.22">
+			<XAudio2 Device="DVS Transmit  7-8 (Dante Virtual Soundcard)" Channel="1" />
+			<ASIO ChannelName="Dante tx 7" />
+		</Element>
+		<Element Name="R4-C2" IgnoreBoundingBox="false" XMin="-2.44" YMin="0.0" ZMin="0.0" XMax="-1.22" YMax="0.2" ZMax="1.22">
+			<XAudio2 Device="DVS Transmit  7-8 (Dante Virtual Soundcard)" Channel="2" />
+			<ASIO ChannelName="Dante tx 8" />
+		</Element>
+		<Element Name="R1-C3" IgnoreBoundingBox="false" XMin="1.22" YMin="0.0" ZMin="-1.22" XMax="2.44" YMax="0.2" ZMax="0.0">
+			<XAudio2 Device="DVS Transmit  9-10 (Dante Virtual Soundcard)" Channel="1" />
+			<ASIO ChannelName="Dante tx 9" />
+		</Element>
+		<Element Name="R2-C3" IgnoreBoundingBox="false" XMin="0.0" YMin="0.0" ZMin="-1.22" XMax="1.22" YMax="0.2" ZMax="0.0">
+			<XAudio2 Device="DVS Transmit  9-10 (Dante Virtual Soundcard)" Channel="2" />
+			<ASIO ChannelName="Dante tx 10" />
+		</Element>
+		<Element Name="R3-C3" IgnoreBoundingBox="false" XMin="-1.22" YMin="0.0" ZMin="-1.22" XMax="0.0" YMax="0.2" ZMax="0.0">
+			<XAudio2 Device="DVS Transmit 11-12 (Dante Virtual Soundcard)" Channel="1" />
+			<ASIO ChannelName="Dante tx 11" />
+		</Element>
+		<Element Name="R4-C3" IgnoreBoundingBox="false" XMin="-2.44" YMin="0.0" ZMin="-1.22" XMax="-1.22" YMax="0.2" ZMax="0.0">
+			<XAudio2 Device="DVS Transmit 11-12 (Dante Virtual Soundcard)" Channel="2" />
+			<ASIO ChannelName="Dante tx 12" />
+		</Element>
+		<Element Name="R1-C4" IgnoreBoundingBox="false" XMin="1.22" YMin="0.0" ZMin="-2.44" XMax="2.44" YMax="0.2" ZMax="-1.22">
+			<XAudio2 Device="DVS Transmit 13-14 (Dante Virtual Soundcard)" Channel="1" />
+			<ASIO ChannelName="Dante tx 13" />
+		</Element>
+		<Element Name="R2-C4" IgnoreBoundingBox="false" XMin="0.0" YMin="0.0" ZMin="-2.44" XMax="1.22" YMax="0.2" ZMax="-1.22">
+			<XAudio2 Device="DVS Transmit 13-14 (Dante Virtual Soundcard)" Channel="2" />
+			<ASIO ChannelName="Dante tx 14" />
+		</Element>
+		<Element Name="R3-C4" IgnoreBoundingBox="false" XMin="-1.22" YMin="0.0" ZMin="-2.44" XMax="0.0" YMax="0.2" ZMax="-1.22">
+			<XAudio2 Device="DVS Transmit 15-16 (Dante Virtual Soundcard)" Channel="1" />
+			<ASIO ChannelName="Dante tx 15" />
+		</Element>
+		<Element Name="R4-C4" IgnoreBoundingBox="false" XMin="-2.44" YMin="0.0" ZMin="-2.44" XMax="-1.22" YMax="0.2" ZMax="-1.22">
+			<XAudio2 Device="DVS Transmit 15-16 (Dante Virtual Soundcard)" Channel="2" />
+			<ASIO ChannelName="Dante tx 16" />
+		</Element>
+	</Elements>
+</AudioHapticsConfig>

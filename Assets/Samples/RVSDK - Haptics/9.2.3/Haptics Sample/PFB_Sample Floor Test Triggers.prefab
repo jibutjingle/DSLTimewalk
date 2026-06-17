@@ -1,0 +1,356 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6870609626269592429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2177469260457585669}
+  - component: {fileID: 7483896755484073255}
+  - component: {fileID: 4549545781112643629}
+  m_Layer: 0
+  m_Name: PFB_Sample Floor Test Triggers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2177469260457585669
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6870609626269592429}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.2, y: 0, z: 2.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8584210628209990705}
+  - {fileID: 7083463781449145331}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7483896755484073255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6870609626269592429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40825100a952a54fa963bf04f214029, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImageButtonOn: {fileID: 0}
+  ImageButtonOff: {fileID: 0}
+  ColorOn: {r: 1, g: 0.40392157, b: 0, a: 0.29803923}
+  ColorOff: {r: 0, g: 1, b: 0.25490198, a: 0.29803923}
+--- !u!114 &4549545781112643629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6870609626269592429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5459f306387f87d46b8daa42ea87c8d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaveName: 
+  Clip: {fileID: 0}
+  AudioBankEntry: {fileID: 6875829862665429067, guid: 8c1837accdc0af44bba600a021201ec8,
+    type: 2}
+  Volume: 0.4
+  Muted: 0
+  Duration: 0
+  LoopClip: 1
+  Persistent: 0
+  AlwaysPlay: 0
+  Target: {fileID: 0}
+  MutedElements: []
+  StationIdMode: 0
+--- !u!1001 &2395467748226885963
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2177469260457585669}
+    m_Modifications:
+    - target: {fileID: 2970739865755554484, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970739865755554484, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: ObjectId
+      value: fed8a52b-93d3-4ffa-89b8-8889f20c9cd2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464513223626333673, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_text
+      value: Turn Floor Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6046315812256457305, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_Name
+      value: PFB_TriggerArea Small OFF
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220639721077211376, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092454646374961893, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: Label
+      value: Turn Floor Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092454646374961893, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: ShowCabin
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092454646374961893, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092454646374961893, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092454646374961893, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7483896755484073255}
+    - target: {fileID: 9092454646374961893, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092454646374961893, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnFloorOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092454646374961893, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FloorTestTrigger, NewAssembly
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092454646374961893, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ed6dbd8a1f759ab4081704a998da659b, type: 3}
+--- !u!4 &7083463781449145331 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2395467748226885963}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3770308848376491657
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2177469260457585669}
+    m_Modifications:
+    - target: {fileID: 2970739865755554484, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2970739865755554484, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: ObjectId
+      value: 39dc600d-eac1-49bf-9e11-31997231a8a3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464513223626333673, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_text
+      value: Turn Floor On
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6046315812256457305, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_Name
+      value: PFB_TriggerArea Small ON
+      objectReference: {fileID: 0}
+    - target: {fileID: 8220639721077211376, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092454646374961893, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: Label
+      value: Turn Floor On
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092454646374961893, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: ShowCabin
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092454646374961893, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092454646374961893, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092454646374961893, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7483896755484073255}
+    - target: {fileID: 9092454646374961893, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092454646374961893, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnFloorOn
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092454646374961893, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FloorTestTrigger, NewAssembly
+      objectReference: {fileID: 0}
+    - target: {fileID: 9092454646374961893, guid: ed6dbd8a1f759ab4081704a998da659b,
+        type: 3}
+      propertyPath: OnActivated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ed6dbd8a1f759ab4081704a998da659b, type: 3}
+--- !u!4 &8584210628209990705 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4860490098634453688, guid: ed6dbd8a1f759ab4081704a998da659b,
+    type: 3}
+  m_PrefabInstance: {fileID: 3770308848376491657}
+  m_PrefabAsset: {fileID: 0}

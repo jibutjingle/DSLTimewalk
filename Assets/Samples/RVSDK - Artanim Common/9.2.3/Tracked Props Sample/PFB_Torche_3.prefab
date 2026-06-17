@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7631007243567923721
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 155456, guid: 9b900c650e22b164588ed29b2ecd2747, type: 3}
+      propertyPath: m_Name
+      value: PFB_Torche_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 444754, guid: 9b900c650e22b164588ed29b2ecd2747, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.225
+      objectReference: {fileID: 0}
+    - target: {fileID: 444754, guid: 9b900c650e22b164588ed29b2ecd2747, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.018
+      objectReference: {fileID: 0}
+    - target: {fileID: 444754, guid: 9b900c650e22b164588ed29b2ecd2747, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.449
+      objectReference: {fileID: 0}
+    - target: {fileID: 444754, guid: 9b900c650e22b164588ed29b2ecd2747, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 444754, guid: 9b900c650e22b164588ed29b2ecd2747, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 444754, guid: 9b900c650e22b164588ed29b2ecd2747, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 444754, guid: 9b900c650e22b164588ed29b2ecd2747, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 444754, guid: 9b900c650e22b164588ed29b2ecd2747, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 444754, guid: 9b900c650e22b164588ed29b2ecd2747, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 444754, guid: 9b900c650e22b164588ed29b2ecd2747, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10811952, guid: 9b900c650e22b164588ed29b2ecd2747, type: 3}
+      propertyPath: m_Color.b
+      value: 0.20784315
+      objectReference: {fileID: 0}
+    - target: {fileID: 10811952, guid: 9b900c650e22b164588ed29b2ecd2747, type: 3}
+      propertyPath: m_Color.g
+      value: 0.25490198
+      objectReference: {fileID: 0}
+    - target: {fileID: 10811952, guid: 9b900c650e22b164588ed29b2ecd2747, type: 3}
+      propertyPath: m_Color.r
+      value: 0.93725497
+      objectReference: {fileID: 0}
+    - target: {fileID: 11408828, guid: 9b900c650e22b164588ed29b2ecd2747, type: 3}
+      propertyPath: NotPickupable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11408828, guid: 9b900c650e22b164588ed29b2ecd2747, type: 3}
+      propertyPath: HideIfNotTracked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11408828, guid: 9b900c650e22b164588ed29b2ecd2747, type: 3}
+      propertyPath: <RigidbodyName>k__BackingField
+      value: Torche_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1572586053661378219, guid: 9b900c650e22b164588ed29b2ecd2747,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 769475053f2542d449fe7ee26adbce34, type: 2}
+    - target: {fileID: 7273845882728861552, guid: 9b900c650e22b164588ed29b2ecd2747,
+        type: 3}
+      propertyPath: m_text
+      value: 'Torche_3
+
+        Visible if not tracked
+
+        Not pickable in Standalone'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9b900c650e22b164588ed29b2ecd2747, type: 3}

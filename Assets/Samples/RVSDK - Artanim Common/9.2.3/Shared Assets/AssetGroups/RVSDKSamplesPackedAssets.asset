@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: RVSDKSamplesPackedAssets
+  m_EditorClassIdentifier: 
+  m_GroupName: RVSDKSamplesPackedAssets
+  m_Data:
+    m_SerializedData: []
+  m_GUID: b03ab9df17a607a48a19a252952656e8
+  m_SerializeEntries:
+  - m_GUID: 934ff753ef9f9d4469a1d12196bb516b
+    m_Address: Packages/com.artanim.common/Samples/Shared Assets/Localization/LocalizationSample.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: a4ffe833bb9bbee4892cd04c225b23b7, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4211e4ef5dcb2ad47b90492b598242e8, type: 2}
+    - {fileID: 11400000, guid: 81a584be47cd92047b20934c36a29df2, type: 2}

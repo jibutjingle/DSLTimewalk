@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LivingRoom_Skybox
+  m_Shader: {fileID: -6465566751694194690, guid: b424c1007aa38164c9bd0745a4a99811,
+    type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _SUNDISK_HIGH
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Night:
+        m_Texture: {fileID: 8900000, guid: a81552b25f3b36b43b82a6c5daf6e098, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex:
+        m_Texture: {fileID: 8900000, guid: 023c3bc552c53c045a54e6f28bef2b3a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AtmosphereThickness: 3.29
+    - _DayExposure: 1.4
+    - _DayNightFactor: 0.5
+    - _DuskTemperature: 1.54
+    - _DuskTint: 0
+    - _HazeVerticalSpread: 0.001
+    - _HorizonGlowIntensity: 0.4
+    - _HorizonScatterBoost: 0
+    - _NightExposure: 1
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _Rotation: 9.56
+    - _SUNDISK: 2
+    - _SunAuraBoost: 0
+    - _SunIntensity: 10
+    - _SunSize: 1
+    - _SunSizeConvergence: 0.1
+    - _SunSoftness: 1
+    - _UseTexture: 1
+    m_Colors:
+    - _GroundColor: {r: 0.16981131, g: 0.11128133, b: 0.09531861, a: 0}
+    - _HorizonGlowColor: {r: 0.5660378, g: 0.02262656, b: 0, a: 0}
+    - _SingleColorSky: {r: 0.25882348, g: 0.7197268, b: 1, a: 0}
+    - _SkyTint: {r: 1, g: 1, b: 1, a: 0}
+  m_BuildTextureStacks: []
+--- !u!114 &4424167284108921989
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7

@@ -1,0 +1,102 @@
+# Artanim specific:
+/Packages/com.dreamscape.coresdk
+/Packages/com.artanim.common
+/Packages/com.dreamscapevr.common
+/Packages/com.dreamscape.voip
+/Packages/com.dreamscape.haptics
+/Assets/StreamingAssets/specialFiles*
+/Assets/RVSDK_Generated/
+/Assets/RVSDK_Generated.meta
+/Build/
+/Builds/
+/IK/
+/Experience/
+/.ailog/
+/logs/
+
+# Unity:
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# Make sure that we get obj files:
+!*.obj
+
+# Mono / Visual Studio
+/.vs/
+obj/
+*.svd
+*.userprefs
+/*.csproj
+*.pidb
+*.suo
+/*.sln
+*.user
+*.unityproj
+*.booproj
+*.VC.opendb
+*.VC.db
+
+# VS Code
+/.vscode/
+
+# Python
+*.pyc
+*.pyc.meta
+
+# Windows
+*.lnk
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashed
+.ehthumbs.db
+Thumbs.db
+Thumbs.db.meta
+
+# Linux
+*~
+
+# Android
+*.apk
+*.apk.meta
+
+# Intellij IDEA
+.idea/
+
+Assets/Plugins/Android/facebook/*.iml
+Assets/Plugins/Android/facebook/*.iml.meta
+Assets/Plugins/Android/facebook/gen/
+
+# Some plugins:
+ExportedObj/
+
+# Libre Office Locks:
+*.~*Packages/com.artanim.common
+/Packages/com.dreamscape.coresdk
+
+# Visual Scripting Generated:
+Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
+Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
+Assets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
+
+# Packed Addressables
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*.*.bin*
+/[Aa]ssets/[Aa]ddressables_Temp/
+/[Aa]ssets/[Aa]ddressables_Temp.meta
+
+# Temp Tests in Unity
+Assets/TMP/
+Assets/TMP.meta
+
+# Project Settings
+**/DreamscapeProjectSettings.asset
+**/DreamscapeProjectSettings.asset.meta

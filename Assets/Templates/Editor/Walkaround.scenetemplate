@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13966, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: Walkaround
+  m_EditorClassIdentifier: 
+  templateScene: {fileID: 102900000, guid: 3565ad8f285406844a6eef4c7b7688b2, type: 3}
+  templateName: Walkaround Scene
+  description: 'Base walkaround scene with a floor and railings
+
+'
+  preview: {fileID: 2800000, guid: d4da7842f01748e40803be16f28c201d, type: 3}
+  dependencies:
+  - dependency: {fileID: 100002, guid: 240c1ae5be0cf194da9988a26281fa11, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: 100002, guid: 222cbce048e3d80409fc8181d5de94ca, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: 2100000, guid: 43f840252af40f949ae5344a120050ce, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2100000, guid: 10bea24cc58e52546a4dc84bd284291c, type: 2}
+    instantiationMode: 1
+  - dependency: {fileID: 2100000, guid: 2c40fe04c1dcf10488e9785a3584ae30, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 1362696878110692, guid: 25bd47ef335779344b7364629e76ef4b, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: 2100000, guid: 1eb44efa486c4c4408ee879c43fd9eb9, type: 2}
+    instantiationMode: 1
+  templatePipeline: {fileID: 11500000, guid: d6b9b4d029453ad479613e95277e0ef9, type: 3}
+  badge: {fileID: 2800000, guid: 048d9345407d2ab46b5a430239eef515, type: 3}
+  addToDefaults: 0

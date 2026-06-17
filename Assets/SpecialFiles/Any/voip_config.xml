@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VoipUnityConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Provider>Vivox</Provider>
+	<DefaultInputDevice />
+	<DefaultOutputDevice />
+	<VolumeInputDevice>1</VolumeInputDevice>
+	<VolumeOutputDevice>1</VolumeOutputDevice>
+	<ConnectionAttempts>5</ConnectionAttempts>
+	<ConnectionAttemptsDelay>30</ConnectionAttemptsDelay>
+	<ConnectionPingIPAddress>8.8.8.8</ConnectionPingIPAddress>
+	<ClientMode>Client ClientServer Standalone</ClientMode>
+	<ServerMode>Server</ServerMode>
+	<SessionChannelIs3d>true</SessionChannelIs3d>
+	<UpdateFrequencyMillis>0.2</UpdateFrequencyMillis>
+</VoipUnityConfig>
