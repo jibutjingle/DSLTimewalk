@@ -24,7 +24,7 @@ MonoBehaviour:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8815427dd9ff4334984b2d9af75d382e
-    m_Address: Packages/com.artanim.common/Runtime/Texts/RVSDK Localization/RVSDK
+    m_Address: Packages/com.artanim.common/Runtime/Modules/Texts/RVSDK Localization/RVSDK
       Texts Shared Data.asset
     m_ReadOnly: 0
     m_SerializedLabels: []

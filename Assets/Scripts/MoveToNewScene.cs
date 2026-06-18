@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using RvSdk.Controller;
+using RvSdk.Module.Messages;
 using UnityEngine;
 // using Unity.Netcode;
 using UnityEngine.SceneManagement;
@@ -101,7 +103,9 @@ public class MoveToNewScene : MonoBehaviour
         // else
         //     RequestSceneChangeServerRpc();
         //Debug.Log("Made it into ChangeScene");
-        HandleSceneChange();
+        // HandleSceneChange();
+
+        GameController.Instance.LoadGameScene(nextSceneName, Transition.FadeWhite);
     }
 
     private void HandleSceneChange()

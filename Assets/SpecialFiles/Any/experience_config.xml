@@ -1,19 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ExperienceConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ExperienceMode="MultiPlayer" HasMatureContent="false" AllowAddPlayerWhileRunning="true" ServerFPS="120" LimitFPSOnHMDOffHead="true" SeatedExperience="false" ShutdownOnEndSession="false" LipsyncAudioGain="0.8" LipsyncSyncUpdatePeriod="0.05" EnableNativeHaptics="true" HideUIInClient="false" KeepFocusOnServerWindow="false" AllowClientSideGameProgress="true" ExperienceName="DSLTimewalk" LipsyncMode="Auto">
 	<StartScenes>
-		<Scene SceneName="TemplateTest" />
-		<Scene SceneName="Scene One" />
-		<Scene SceneName="Haptics Sample Scene" />
-		<Scene SceneName="Custom Messaging Sample Scene" />
-		<Scene SceneName="Avatar Generic Trigger Sample Scene" />
-		<Scene SceneName="Experience Trigger Sample Scene" />
-		<Scene SceneName="Localization Sample Scene" />
-		<Scene SceneName="Sync Transform Sample Scene" />
-		<Scene SceneName="Synced Timeline Sample Scene" />
-		<Scene SceneName="Tracked Props Sample Scene" />
+		<Scene SceneName="Scene0_tutorial" />
+		<Scene SceneName="Scene1Baby" />
+		<Scene SceneName="Scene2DMV" />
+		<Scene SceneName="Scene3Ellis" />
+		<Scene SceneName="Scene4Ana" />
+		<Scene SceneName="Scene5Kevin" />
+		<Scene SceneName="Scene6MusicHall" />
+		<Scene SceneName="Scene7_EndDMV" />
+		<Scene SceneName="Scene8_EndWhiteBox" />
+		<Scene SceneName="Scene9_CreditsBlackBox" />
 	</StartScenes>
 	<Avatars>
 		<Avatar Name="Jack" AvatarResource="Avatars/PFB_Jack" RigName="Mixamo" />
+		<Avatar Name="Lisa" AvatarResource="Avatars/PFB_Lisa" RigName="Character Creator AR" />
 	</Avatars>
 	<ExperienceProperties />
 	<TrackedProps />
