@@ -50,10 +50,7 @@ public class ShakeVolumeController : MonoBehaviour
         {
             lastSoundTime = Time.time;
 
-
             PlayNoteServerRpc();
-
-
         }
 
         lastPosition = transform.position;
@@ -70,15 +67,15 @@ public class ShakeVolumeController : MonoBehaviour
         // Tell everyone (including the original player) to play the sound
 
         audioSource.volume = currentVolume;
-        PlayNoteClientRpc();
-        //audioSource.PlayOneShot(soundClip);
+        // PlayNoteClientRpc();
+        audioSource.PlayOneShot(soundClip);
     }
 
     // [ClientRpc]
-    private void PlayNoteClientRpc()
-    {
-        audioSource.PlayOneShot(soundClip);
+    // private void PlayNoteClientRpc()
+    // {
+    //     audioSource.PlayOneShot(soundClip);
 
 
-    }
+    // }
 }

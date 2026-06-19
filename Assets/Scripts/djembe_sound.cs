@@ -1,9 +1,9 @@
 // using System.Collections;
 // //using System.Collections.Generic;
-// using Unity.Netcode;
 // using UnityEngine;
-// using UnityEngine.XR.Interaction.Toolkit;
-// using UnityEngine.XR.Interaction.Toolkit.Interactors;
+// using RvSdk.Component;
+// using RvSdk.Avatar;
+
 // #if UNITY_EDITOR
 // using UnityEditor;
 // #endif
@@ -16,7 +16,7 @@
 
 // [RequireComponent(typeof(AudioSource))]
 
-// public class djembe_sound : NetworkBehaviour
+// public class djembe_sound : MonoBehaviour
 // {
 //     public AudioClip softImpactClip;
 //     public AudioClip mediumImpactClip;
@@ -25,17 +25,24 @@
 //     public float mediumThreshold = 5f; //currently unused
 //     public float hardThreshold = 10f; //currently unused
 //     private AudioSource audioSource;
-//     private IXRInteractor interactor;
 //     [HideInInspector] public bool LightThreadsInScene;
 //     private ThreadSpawner threadSpawner;
 //     private AudioIncreaseOnGrab audioIncreaseOnGrab;
 //     [HideInInspector] public GameObject lightAura;
+//     private ClientToServerTrigger clientToServerTrigger;
+//     private NetworkSound networkSound;
 
 //     void Start()
 //     {
 //         audioSource = GetComponent<AudioSource>();
 //         threadSpawner = GetComponent<ThreadSpawner>();
 //         audioIncreaseOnGrab = GetComponent<AudioIncreaseOnGrab>();
+//     }
+
+//     public void HandleServerHit(string triggerName, AvatarController avatar, string clipIndex)
+//     {
+//         if (networkSound == null) return;
+//         networkSound.PlayOnce(int.Parse(clipIndex));
 //     }
 
 //     private bool IsWithinNearDistance(IXRInteractor interactor, float nearMaxDistance)
@@ -67,14 +74,14 @@
 
 //     }
 
-//     [ServerRpc(RequireOwnership = false)]
+//     // [ServerRpc(RequireOwnership = false)]
 //     private void PlayNoteServerRpc(DrumSoundType type)
 //     {
 //         // Tell everyone (including the original player) to play the sound
 //         PlayNoteClientRpc(type);
 //     }
 
-//     [ClientRpc]
+//     // [ClientRpc]
 //     private void PlayNoteClientRpc(DrumSoundType type)
 //     {
 //         AudioClip selectedClip = null;

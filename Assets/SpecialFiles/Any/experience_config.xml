@@ -13,7 +13,6 @@
 		<Scene SceneName="Scene9_CreditsBlackBox" />
 	</StartScenes>
 	<Avatars>
-		<Avatar Name="Jack" AvatarResource="Avatars/PFB_Jack" RigName="Mixamo" />
 		<Avatar Name="Lisa" AvatarResource="Avatars/PFB_Lisa" RigName="Character Creator AR" />
 	</Avatars>
 	<ExperienceProperties />

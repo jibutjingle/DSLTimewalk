@@ -535,6 +535,8 @@ GameObject:
   - component: {fileID: 72566844}
   - component: {fileID: 72566842}
   - component: {fileID: 72566846}
+  - component: {fileID: 72566848}
+  - component: {fileID: 72566847}
   m_Layer: 0
   m_Name: Key7
   m_TagString: DrumInstrument
@@ -687,6 +689,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumstickObject: {fileID: 466751414}
+--- !u!114 &72566847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72566840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 9c55121b-c7b3-4b19-b27d-87723412863d
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 72566848}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &72566848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72566840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 8cea275a-9126-4fb6-8bef-1674059af591
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: 738ec4208123b1b439d454de8a7e0173, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!1001 &240959279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -964,6 +1018,8 @@ GameObject:
   - component: {fileID: 260736400}
   - component: {fileID: 260736398}
   - component: {fileID: 260736402}
+  - component: {fileID: 260736404}
+  - component: {fileID: 260736403}
   m_Layer: 0
   m_Name: Key10
   m_TagString: DrumInstrument
@@ -1116,6 +1172,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumstickObject: {fileID: 466751414}
+--- !u!114 &260736403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260736396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: cabe3fc5-dfcc-4ec1-877e-5839a56033b0
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 260736404}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &260736404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260736396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 4683c241-f168-4b4b-ae4b-8c6e4c18856d
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: eb51478f4f004e84aaeca65564b0b10a, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!1001 &272593722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1469,6 +1577,8 @@ GameObject:
   - component: {fileID: 439692717}
   - component: {fileID: 439692715}
   - component: {fileID: 439692719}
+  - component: {fileID: 439692721}
+  - component: {fileID: 439692720}
   m_Layer: 0
   m_Name: Key1
   m_TagString: DrumInstrument
@@ -1621,6 +1731,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumstickObject: {fileID: 466751414}
+--- !u!114 &439692720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439692713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 7b12192e-db2f-4127-81fc-348ae862c480
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 439692721}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &439692721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439692713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 2b7fe81e-d1a9-4846-ba6b-f5800ecc7fc7
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: 4dba87eeb0b68e24eafa57ef0812fbb4, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!1001 &441869954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1712,6 +1874,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 147ddd90a00cb5b4ba5e2d874d392ed1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 441869958}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 147ddd90a00cb5b4ba5e2d874d392ed1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 441869965}
     - targetCorrespondingSourceObject: {fileID: 1084761860999243845, guid: 147ddd90a00cb5b4ba5e2d874d392ed1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1011623285}
@@ -1821,6 +1986,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 224.72311, y: 317.59247, z: 15.344687}
   m_Center: {x: -9.426043, y: 1.6915499, z: -5.410819}
+--- !u!114 &441869965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441869956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e59167d2554e9a448d81c7dd0b79edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &466751413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1915,6 +2092,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1760320108444326, guid: 0908c68130cc9bf419f4a56e93d494f4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 872218047}
+    - targetCorrespondingSourceObject: {fileID: 1760320108444326, guid: 0908c68130cc9bf419f4a56e93d494f4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 872218048}
   m_SourcePrefab: {fileID: 100100000, guid: 0908c68130cc9bf419f4a56e93d494f4, type: 3}
 --- !u!1 &466751414 stripped
 GameObject:
@@ -2046,7 +2226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitForVoiceOverTime: 5
-  instrumentPlayingTime: 90
+  instrumentPlayingTime: 20
   m_GameObjectList:
   - {fileID: 1555919800}
   - {fileID: 920530876}
@@ -2238,7 +2418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b752da9bd57bb4b9f9bcea3448cfb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationSeconds: 90
+  durationSeconds: 20
   countdownText: {fileID: 1855982435}
   startOnEnable: 0
 --- !u!1001 &533684840
@@ -3146,9 +3326,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Property:
-    m_Name: Transform
-  Target: {fileID: 1466014096}
 --- !u!114 &797186395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3161,10 +3338,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 797186394}
-  m_VisualEffect: {fileID: 797186397}
 --- !u!73398921 &797186396
 VFXRenderer:
   serializedVersion: 1
@@ -3346,6 +3519,18 @@ MonoBehaviour:
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
+--- !u!114 &872218048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466751414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e59167d2554e9a448d81c7dd0b79edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &920530876 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1355977567162416, guid: b93e0c05e880c67449fd477c6411622e, type: 3}
@@ -3578,6 +3763,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e63d0440d607e9c4e9db3cab7b17e313, type: 3}
       insertIndex: -1
       addedObject: {fileID: 973040371}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e63d0440d607e9c4e9db3cab7b17e313, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 973040372}
   m_SourcePrefab: {fileID: 100100000, guid: e63d0440d607e9c4e9db3cab7b17e313, type: 3}
 --- !u!1 &973040353 stripped
 GameObject:
@@ -3793,6 +3981,18 @@ MonoBehaviour:
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
+--- !u!114 &973040372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973040353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e59167d2554e9a448d81c7dd0b79edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &991453375
 GameObject:
   m_ObjectHideFlags: 0
@@ -3865,6 +4065,8 @@ GameObject:
   - component: {fileID: 1021426734}
   - component: {fileID: 1021426732}
   - component: {fileID: 1021426735}
+  - component: {fileID: 1021426737}
+  - component: {fileID: 1021426736}
   m_Layer: 0
   m_Name: Key12
   m_TagString: DrumInstrument
@@ -4017,6 +4219,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumstickObject: {fileID: 466751414}
+--- !u!114 &1021426736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021426729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 2f300577-8d1c-4612-bd16-b26faba7a8fe
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1021426737}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1021426737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021426729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 2a9f45a9-d45c-475d-92b9-bedeb0b249d0
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: 8e86e0fa7dd2b2e40be397325d7de557, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!1 &1063420672
 GameObject:
   m_ObjectHideFlags: 0
@@ -4167,6 +4421,8 @@ GameObject:
   - component: {fileID: 1093867673}
   - component: {fileID: 1093867675}
   - component: {fileID: 1093867678}
+  - component: {fileID: 1093867680}
+  - component: {fileID: 1093867679}
   m_Layer: 0
   m_Name: Top drum
   m_TagString: Untagged
@@ -4201,13 +4457,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a7b53af72f088448860a6ecb181441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  softImpactClip: {fileID: 8300000, guid: 0213bf58285bcbe45ae79c249ee27ac5, type: 3}
-  mediumImpactClip: {fileID: 8300000, guid: ef4f0674fd6765544a62d97711c89a14, type: 3}
-  hardImpactClip: {fileID: 8300000, guid: a5e5b02187211d5419d1af9ed3eb4dfa, type: 3}
-  mediumThreshold: 3
-  hardThreshold: 9
-  LightThreadsInScene: 0
-  lightAura: {fileID: 0}
 --- !u!65 &1093867674
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4352,6 +4601,58 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1093867679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093867671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 2b01be99-66cc-4976-bd80-d57faf452735
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 0}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
+--- !u!114 &1093867680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093867671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: b4ccf6f7-6e36-49cc-966c-5a1eb5d0d2b9
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1093867679}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1103759287
 GameObject:
   m_ObjectHideFlags: 0
@@ -4364,6 +4665,8 @@ GameObject:
   - component: {fileID: 1103759291}
   - component: {fileID: 1103759289}
   - component: {fileID: 1103759293}
+  - component: {fileID: 1103759295}
+  - component: {fileID: 1103759294}
   m_Layer: 0
   m_Name: Key9
   m_TagString: DrumInstrument
@@ -4516,6 +4819,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumstickObject: {fileID: 466751414}
+--- !u!114 &1103759294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103759287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 7fa2cb59-a221-4ffa-ac00-b6e727e19ec9
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1103759295}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1103759295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103759287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 435d9a72-45bd-4243-a43f-6e93af5efdc9
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: 6d756bb7503d36f47a43e31047afd28a, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!1 &1105204797
 GameObject:
   m_ObjectHideFlags: 0
@@ -4563,9 +4918,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Property:
-    m_Name: Transform
-  Target: {fileID: 359431985}
 --- !u!114 &1105204800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4578,10 +4930,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 1105204799}
-  m_VisualEffect: {fileID: 1105204802}
 --- !u!73398921 &1105204801
 VFXRenderer:
   serializedVersion: 1
@@ -4719,9 +5067,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Property:
-    m_Name: Transform
-  Target: {fileID: 359431985}
 --- !u!114 &1124693024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4734,10 +5079,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 1124693023}
-  m_VisualEffect: {fileID: 1124693026}
 --- !u!73398921 &1124693025
 VFXRenderer:
   serializedVersion: 1
@@ -4880,9 +5221,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Property:
-    m_Name: Transform
-  Target: {fileID: 359431985}
 --- !u!114 &1258453432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4895,10 +5233,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 1258453431}
-  m_VisualEffect: {fileID: 1258453434}
 --- !u!73398921 &1258453433
 VFXRenderer:
   serializedVersion: 1
@@ -5203,6 +5537,8 @@ GameObject:
   - component: {fileID: 1321748522}
   - component: {fileID: 1321748520}
   - component: {fileID: 1321748524}
+  - component: {fileID: 1321748526}
+  - component: {fileID: 1321748525}
   m_Layer: 0
   m_Name: Key5
   m_TagString: DrumInstrument
@@ -5355,6 +5691,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumstickObject: {fileID: 466751414}
+--- !u!114 &1321748525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321748518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: c5289651-bf98-424b-ba86-1b4593b57ac4
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1321748526}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1321748526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321748518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: ec512daf-4fbf-49f5-ada1-ea6edc5456e0
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: 97c6d8e10e9ae4d45a7dcee4773a1351, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!1 &1324098788
 GameObject:
   m_ObjectHideFlags: 0
@@ -5402,9 +5790,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Property:
-    m_Name: Transform
-  Target: {fileID: 359431985}
 --- !u!114 &1324098791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5417,10 +5802,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 1324098790}
-  m_VisualEffect: {fileID: 1324098793}
 --- !u!73398921 &1324098792
 VFXRenderer:
   serializedVersion: 1
@@ -5592,6 +5973,8 @@ GameObject:
   - component: {fileID: 1351956922}
   - component: {fileID: 1351956920}
   - component: {fileID: 1351956924}
+  - component: {fileID: 1351956926}
+  - component: {fileID: 1351956925}
   m_Layer: 0
   m_Name: Key2
   m_TagString: DrumInstrument
@@ -5744,6 +6127,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumstickObject: {fileID: 466751414}
+--- !u!114 &1351956925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351956918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 27182386-6338-478a-88f4-c1e4b26ed222
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1351956926}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1351956926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351956918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 5648bcd0-7d33-44f0-9d07-22d81e4adf4b
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: 92bb715ca2d2ffe4eb4b0fcb87e442d5, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!1 &1377098005
 GameObject:
   m_ObjectHideFlags: 0
@@ -5756,6 +6191,8 @@ GameObject:
   - component: {fileID: 1377098009}
   - component: {fileID: 1377098007}
   - component: {fileID: 1377098011}
+  - component: {fileID: 1377098013}
+  - component: {fileID: 1377098012}
   m_Layer: 0
   m_Name: Key11
   m_TagString: DrumInstrument
@@ -5908,6 +6345,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumstickObject: {fileID: 466751414}
+--- !u!114 &1377098012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377098005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 54b9d269-8b7e-4f7a-9839-ea85782f260c
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1377098013}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1377098013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377098005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 63998c11-16bb-4abc-8dfa-76c22a1bffd3
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: 53426abade8d6e64aa24b0c564a3f99b, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!1 &1410285331
 GameObject:
   m_ObjectHideFlags: 0
@@ -5955,9 +6444,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Property:
-    m_Name: Transform
-  Target: {fileID: 359431985}
 --- !u!114 &1410285334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5970,10 +6456,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 1410285333}
-  m_VisualEffect: {fileID: 1410285336}
 --- !u!73398921 &1410285335
 VFXRenderer:
   serializedVersion: 1
@@ -6568,6 +7050,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e63d0440d607e9c4e9db3cab7b17e313, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1555919817}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e63d0440d607e9c4e9db3cab7b17e313, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1555919818}
   m_SourcePrefab: {fileID: 100100000, guid: e63d0440d607e9c4e9db3cab7b17e313, type: 3}
 --- !u!4 &1555919799 stripped
 Transform:
@@ -6783,6 +7268,18 @@ MonoBehaviour:
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
+--- !u!114 &1555919818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555919800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e59167d2554e9a448d81c7dd0b79edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1572726957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6899,9 +7396,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Property:
-    m_Name: Transform
-  Target: {fileID: 359431985}
 --- !u!114 &1585963648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6914,10 +7408,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 1585963647}
-  m_VisualEffect: {fileID: 1585963650}
 --- !u!73398921 &1585963649
 VFXRenderer:
   serializedVersion: 1
@@ -7020,6 +7510,8 @@ GameObject:
   - component: {fileID: 1605245919}
   - component: {fileID: 1605245917}
   - component: {fileID: 1605245921}
+  - component: {fileID: 1605245923}
+  - component: {fileID: 1605245922}
   m_Layer: 0
   m_Name: Key6
   m_TagString: DrumInstrument
@@ -7172,6 +7664,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumstickObject: {fileID: 466751414}
+--- !u!114 &1605245922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605245915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: aa18da0a-d4db-4c55-8cab-823cedc7ed52
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1605245923}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1605245923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605245915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 8360faaf-604f-44f9-8851-8931888c9dbe
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: 1726ef69ff2a4a54092c46f9bc8b5fea, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!1001 &1613901783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7358,6 +7902,8 @@ GameObject:
   - component: {fileID: 1631982563}
   - component: {fileID: 1631982561}
   - component: {fileID: 1631982565}
+  - component: {fileID: 1631982567}
+  - component: {fileID: 1631982566}
   m_Layer: 0
   m_Name: Key4
   m_TagString: DrumInstrument
@@ -7510,6 +8056,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumstickObject: {fileID: 466751414}
+--- !u!114 &1631982566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631982559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: ccc6c7fe-309e-497e-abf1-faeb041bed06
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1631982567}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1631982567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631982559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 7f06ae0f-a0f3-467d-b55a-2eef57ada111
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: e9cd81766d6881e419ee5399060ddd5b, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!1 &1666758424
 GameObject:
   m_ObjectHideFlags: 0
@@ -7749,9 +8347,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Property:
-    m_Name: Transform
-  Target: {fileID: 359431985}
 --- !u!114 &1740699388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7764,10 +8359,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 1740699387}
-  m_VisualEffect: {fileID: 1740699390}
 --- !u!73398921 &1740699389
 VFXRenderer:
   serializedVersion: 1
@@ -8075,6 +8666,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1760320108444326, guid: 0908c68130cc9bf419f4a56e93d494f4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1783584113}
+    - targetCorrespondingSourceObject: {fileID: 1760320108444326, guid: 0908c68130cc9bf419f4a56e93d494f4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1783584114}
   m_SourcePrefab: {fileID: 100100000, guid: 0908c68130cc9bf419f4a56e93d494f4, type: 3}
 --- !u!1 &1783584103 stripped
 GameObject:
@@ -8174,11 +8768,87 @@ MonoBehaviour:
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
+--- !u!114 &1783584114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783584103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e59167d2554e9a448d81c7dd0b79edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1798972714 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 546808314628787136, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
   m_PrefabInstance: {fileID: 7654599522796380643}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1798972715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798972714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: fc826d2c-fb28-4fbc-a577-119468f933f8
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1798972716}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1798972716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798972714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 7fdd4d02-09e4-4609-9ca3-7df2823701e1
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: 266131bf89afc414fa686fb9f23decb7, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
+--- !u!114 &1798972717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798972714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e59167d2554e9a448d81c7dd0b79edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1805334169 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6698607749453124677, guid: 68425f85656918745bea1211c0e327c3, type: 3}
@@ -8231,9 +8901,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Property:
-    m_Name: Transform
-  Target: {fileID: 359431985}
 --- !u!114 &1812254520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8246,10 +8913,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 1812254519}
-  m_VisualEffect: {fileID: 1812254522}
 --- !u!73398921 &1812254521
 VFXRenderer:
   serializedVersion: 1
@@ -8437,6 +9100,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 147ddd90a00cb5b4ba5e2d874d392ed1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1976807055}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 147ddd90a00cb5b4ba5e2d874d392ed1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1976807057}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 147ddd90a00cb5b4ba5e2d874d392ed1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1976807056}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 147ddd90a00cb5b4ba5e2d874d392ed1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1976807058}
     - targetCorrespondingSourceObject: {fileID: 1084761860999243845, guid: 147ddd90a00cb5b4ba5e2d874d392ed1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 634464477}
@@ -8704,6 +9376,8 @@ GameObject:
   - component: {fileID: 1887169367}
   - component: {fileID: 1887169365}
   - component: {fileID: 1887169369}
+  - component: {fileID: 1887169371}
+  - component: {fileID: 1887169370}
   m_Layer: 0
   m_Name: Key8
   m_TagString: DrumInstrument
@@ -8856,11 +9530,75 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumstickObject: {fileID: 466751414}
+--- !u!114 &1887169370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887169363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: d7fb5b35-8d13-4fd0-bc82-4ce28b6c2452
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1887169371}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1887169371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887169363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 2e3e12ef-d068-4e40-b52b-4c3e561e3f9a
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: 763269a0429dcf74c90074d2e956bd5b, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!1 &1890133278 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 939125951107053599, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
   m_PrefabInstance: {fileID: 7654599522796380643}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1890133279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890133278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e59167d2554e9a448d81c7dd0b79edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1903480176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8973,7 +9711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3348f373cd0783b4ba54e79d556bb36a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drumstickObject: {fileID: 441869956}
+  drumstickObject: {fileID: 0}
 --- !u!82 &1976807055
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9070,6 +9808,70 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1976807056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825513004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: b7297b2a-eb4c-4f09-91a8-b91f0e67d162
+  SyncMode: 0
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1976807057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825513004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: ad781780-4a1e-4caa-b16f-93feabb81990
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: da8720719b6befa4a92b3787cb0de69c, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
+--- !u!114 &1976807058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825513004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e59167d2554e9a448d81c7dd0b79edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2013015807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9441,6 +10243,8 @@ GameObject:
   - component: {fileID: 2135594315}
   - component: {fileID: 2135594313}
   - component: {fileID: 2135594317}
+  - component: {fileID: 2135594319}
+  - component: {fileID: 2135594318}
   m_Layer: 0
   m_Name: Key3
   m_TagString: DrumInstrument
@@ -9593,6 +10397,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumstickObject: {fileID: 466751414}
+--- !u!114 &2135594318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135594311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 384ba55c-7fd5-446c-9b48-16853eeea5d2
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2135594319}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2135594319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135594311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 73837bcb-988b-4264-ab13-9cf67ea903a5
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: 8e80f05d8c8c673479db95671b28862c, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!23 &31340974163692946
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9751,6 +10607,8 @@ GameObject:
   - component: {fileID: 9195759361211155539}
   - component: {fileID: 9195759361211155538}
   - component: {fileID: 9195759361211155540}
+  - component: {fileID: 9195759361211155542}
+  - component: {fileID: 9195759361211155541}
   m_Layer: 0
   m_Name: Floor_Tom
   m_TagString: Untagged
@@ -9920,6 +10778,8 @@ GameObject:
   - component: {fileID: 2403348438719009381}
   - component: {fileID: 2403348438719009380}
   - component: {fileID: 2403348438719009382}
+  - component: {fileID: 2403348438719009384}
+  - component: {fileID: 2403348438719009383}
   m_Layer: 0
   m_Name: Crash
   m_TagString: Untagged
@@ -10057,6 +10917,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumstickObject: {fileID: 5779412675199743831}
+--- !u!114 &2403348438719009383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2403348438719009378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 97eff565-020b-4906-b8e0-21c3ca68261d
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2403348438719009384}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2403348438719009384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2403348438719009378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 43c6592d-73fb-4b34-8d7a-005b6f8c1cf6
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: 6bff60ae139ecf249a69007102f80560, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!1 &2471063453814477313
 GameObject:
   m_ObjectHideFlags: 0
@@ -10069,6 +10981,8 @@ GameObject:
   - component: {fileID: 2471063453814477316}
   - component: {fileID: 2471063453814477315}
   - component: {fileID: 2471063453814477317}
+  - component: {fileID: 2471063453814477319}
+  - component: {fileID: 2471063453814477318}
   m_Layer: 0
   m_Name: Hi_Tom2
   m_TagString: Untagged
@@ -10206,6 +11120,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumstickObject: {fileID: 5779412675199743831}
+--- !u!114 &2471063453814477318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2471063453814477313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 0b7cb624-0773-4643-a560-1c8fa29f8684
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2471063453814477319}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2471063453814477319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2471063453814477313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: cb5610a5-9347-4ca3-85a8-52237305016d
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: 2008544b57f992344bdb5b60fd45c4e4, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!33 &2849563856204855640
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10397,9 +11363,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Property:
-    m_Name: Transform
-  Target: {fileID: 359431985}
 --- !u!114 &4256022025926075853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10412,10 +11375,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 4256022025926075852}
-  m_VisualEffect: {fileID: 4256022025926075854}
 --- !u!2083052967 &4256022025926075854
 VisualEffect:
   m_ObjectHideFlags: 0
@@ -10518,6 +11477,8 @@ GameObject:
   - component: {fileID: 6144953378352680381}
   - component: {fileID: 6144953378352680380}
   - component: {fileID: 6144953378352680382}
+  - component: {fileID: 6144953378352680384}
+  - component: {fileID: 6144953378352680383}
   m_Layer: 0
   m_Name: Snare
   m_TagString: Untagged
@@ -10557,9 +11518,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Property:
-    m_Name: Transform
-  Target: {fileID: 359431985}
 --- !u!114 &4951746663626896115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10572,10 +11530,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 4951746663626896114}
-  m_VisualEffect: {fileID: 4951746663626896116}
 --- !u!2083052967 &4951746663626896116
 VisualEffect:
   m_ObjectHideFlags: 0
@@ -10696,6 +11650,7 @@ GameObject:
   - component: {fileID: 7313712222688505897}
   - component: {fileID: 7313712222688505896}
   - component: {fileID: 7313712222688505902}
+  - component: {fileID: 7313712222688505903}
   m_Layer: 0
   m_Name: Drumstick
   m_TagString: DrumInstrument
@@ -10871,6 +11826,58 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6144953378352680383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4266940111686134892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 25c67de7-df14-4c21-be90-589a10207379
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6144953378352680384}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6144953378352680384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4266940111686134892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 7fce1326-c0b7-42f0-8028-71881b42864a
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: 64a0583bd2a279a4c95a71f3f748a5b7, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!1 &6270175791314861670 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7880807333435932820, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
@@ -10888,6 +11895,8 @@ GameObject:
   - component: {fileID: 6543222484033649748}
   - component: {fileID: 6543222484033649747}
   - component: {fileID: 6543222484033649749}
+  - component: {fileID: 6543222484033649751}
+  - component: {fileID: 6543222484033649750}
   m_Layer: 0
   m_Name: Hi_Hats
   m_TagString: Untagged
@@ -11025,6 +12034,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumstickObject: {fileID: 5779412675199743831}
+--- !u!114 &6543222484033649750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6543222484033649745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: b123405f-1f9d-4e87-9b7b-fdcd59f32643
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6543222484033649751}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6543222484033649751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6543222484033649745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 7c8a2ab0-2e5d-4a7f-9a44-4e4a43f5d41a
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: d79abdc7d9e9b7f42927692d0d90ec1d, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!1 &6614717415457002821
 GameObject:
   m_ObjectHideFlags: 0
@@ -11083,6 +12144,8 @@ GameObject:
   - component: {fileID: 6923327954893727644}
   - component: {fileID: 6923327954893727643}
   - component: {fileID: 6923327954893727645}
+  - component: {fileID: 6923327954893727647}
+  - component: {fileID: 6923327954893727646}
   m_Layer: 0
   m_Name: Hi_Tom
   m_TagString: Untagged
@@ -11220,6 +12283,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumstickObject: {fileID: 5779412675199743831}
+--- !u!114 &6923327954893727646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6923327954893727641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: dcc81f17-2558-411c-9c8a-df0e25cd82d5
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6923327954893727647}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &6923327954893727647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6923327954893727641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 50920a3e-7fab-4f31-84aa-4748c4db710d
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: 3fdb05d07b0aea14d90605d27fa1a6fe, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!1 &7094975456015959324
 GameObject:
   m_ObjectHideFlags: 0
@@ -11235,6 +12350,7 @@ GameObject:
   - component: {fileID: 7094975456015959327}
   - component: {fileID: 7094975456015959326}
   - component: {fileID: 7094975456015959332}
+  - component: {fileID: 7094975456015959333}
   m_Layer: 0
   m_Name: Drumstick_1
   m_TagString: DrumInstrument
@@ -11330,6 +12446,18 @@ MonoBehaviour:
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
+--- !u!114 &7094975456015959333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7094975456015959324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e59167d2554e9a448d81c7dd0b79edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7295427144308066400
 GameObject:
   m_ObjectHideFlags: 0
@@ -11362,9 +12490,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Property:
-    m_Name: Transform
-  Target: {fileID: 359431985}
 --- !u!114 &7295427144308066402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11377,10 +12502,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 7295427144308066401}
-  m_VisualEffect: {fileID: 7295427144308066403}
 --- !u!2083052967 &7295427144308066403
 VisualEffect:
   m_ObjectHideFlags: 0
@@ -11576,6 +12697,18 @@ MonoBehaviour:
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
+--- !u!114 &7313712222688505903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5779412675199743831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e59167d2554e9a448d81c7dd0b79edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7483035748974069114
 GameObject:
   m_ObjectHideFlags: 0
@@ -11588,6 +12721,8 @@ GameObject:
   - component: {fileID: 7483035748974069117}
   - component: {fileID: 7483035748974069116}
   - component: {fileID: 7483035748974069118}
+  - component: {fileID: 7483035748974069120}
+  - component: {fileID: 7483035748974069119}
   m_Layer: 0
   m_Name: Ride
   m_TagString: Untagged
@@ -11725,6 +12860,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumstickObject: {fileID: 5779412675199743831}
+--- !u!114 &7483035748974069119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7483035748974069114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 06bd8043-dcee-4742-b77b-1ba85e6020dd
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7483035748974069120}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7483035748974069120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7483035748974069114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 0dbaafab-6de0-4daf-9de9-dc55c4694a9d
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: 4047b8c4a93d0d44bbaac041ea872010, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!1001 &7654599522796380643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11826,18 +13013,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 503592699}
     m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
     - {fileID: 8606865908996478251, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
-    - {fileID: 5018351187454718142, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
     - {fileID: 6545771417566396894, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
     - {fileID: 8505601618284999816, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
     - {fileID: 1362777177230332077, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
-    - {fileID: 3955701231560357317, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
-    - {fileID: 2097078231223991635, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
-    - {fileID: 4863140841468107171, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
-    - {fileID: 233914109400143733, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 546808314628787136, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1798972716}
+    - targetCorrespondingSourceObject: {fileID: 546808314628787136, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1798972715}
+    - targetCorrespondingSourceObject: {fileID: 546808314628787136, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1798972717}
+    - targetCorrespondingSourceObject: {fileID: 939125951107053599, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1890133279}
   m_SourcePrefab: {fileID: 100100000, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
 --- !u!1 &7816137430987435920
 GameObject:
@@ -11852,6 +13054,8 @@ GameObject:
   - component: {fileID: 7816137430987435923}
   - component: {fileID: 7816137430987435922}
   - component: {fileID: 7816137430987435925}
+  - component: {fileID: 7816137430987435927}
+  - component: {fileID: 7816137430987435926}
   m_Layer: 0
   m_Name: Bass_Drum
   m_TagString: Untagged
@@ -12010,6 +13214,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumstickObject: {fileID: 5779412675199743831}
+--- !u!114 &7816137430987435926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7816137430987435920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 5727476b-8ee9-435a-bd03-19b5e37fb6a9
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7816137430987435927}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7816137430987435927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7816137430987435920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: d42bc328-38fa-4fa8-8bdb-978648a1216d
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: cf581205da2986a4e82dab65f9e2e7e0, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!4 &7924356247226146024 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1326198463619697135, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
@@ -12175,6 +13431,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drumstickObject: {fileID: 5779412675199743831}
+--- !u!114 &9195759361211155541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330005462576400641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 7ae11e33-4804-4986-af82-c11cc0d22881
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9195759361211155542}
+        m_TargetAssemblyTypeName: RvSdk.Component.NetworkSound, com.artanim.common
+        m_MethodName: PlayOnce
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &9195759361211155542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330005462576400641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 65d16281-d0fd-4672-b9e5-42315f5a5e93
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: 7fc61dd693b59db4492da3442151f622, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
