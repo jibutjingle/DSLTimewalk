@@ -3286,9 +3286,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4538226158273673311, guid: bd752712816231640b08b964a02a9170, type: 3}
       insertIndex: -1
       addedObject: {fileID: 537697074}
-    - targetCorrespondingSourceObject: {fileID: 4538226158273673311, guid: bd752712816231640b08b964a02a9170, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 537697073}
   m_SourcePrefab: {fileID: 100100000, guid: bd752712816231640b08b964a02a9170, type: 3}
 --- !u!4 &537697070 stripped
 Transform:
@@ -3305,87 +3302,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4712688298782729698, guid: bd752712816231640b08b964a02a9170, type: 3}
   m_PrefabInstance: {fileID: 537697069}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &537697073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 537697071}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38f6bf3d943ac7945842268c9ef1dca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
-  m_Colliders: []
-  m_InteractionLayers:
-    m_Bits: 2147483648
-  m_DistanceCalculationMode: 1
-  m_SelectMode: 1
-  m_FocusMode: 1
-  m_CustomReticle: {fileID: 0}
-  m_AllowGazeInteraction: 0
-  m_AllowGazeSelect: 0
-  m_OverrideGazeTimeToSelect: 0
-  m_GazeTimeToSelect: 0.5
-  m_OverrideTimeToAutoDeselectGaze: 0
-  m_TimeToAutoDeselectGaze: 3
-  m_AllowGazeAssistance: 0
-  m_FirstHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstFocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastFocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Activated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Deactivated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
-  m_StartingInteractionStrengthFilters: []
-  m_TeleportationProvider: {fileID: 0}
-  m_MatchOrientation: 0
-  m_MatchDirectionalInput: 0
-  m_TeleportTrigger: 0
-  m_FilterSelectionByHitNormal: 0
-  m_UpNormalToleranceDegrees: 30
-  m_Teleporting:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!64 &537697074
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8058,7 +7974,6 @@ GameObject:
   - component: {fileID: 1223340057}
   - component: {fileID: 1223340056}
   - component: {fileID: 1223340055}
-  - component: {fileID: 1223340058}
   m_Layer: 0
   m_Name: TeleportableFloor
   m_TagString: Untagged
@@ -8152,87 +8067,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223340053}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1223340058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223340053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38f6bf3d943ac7945842268c9ef1dca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
-  m_Colliders: []
-  m_InteractionLayers:
-    m_Bits: 2147483648
-  m_DistanceCalculationMode: 1
-  m_SelectMode: 1
-  m_FocusMode: 1
-  m_CustomReticle: {fileID: 0}
-  m_AllowGazeInteraction: 0
-  m_AllowGazeSelect: 0
-  m_OverrideGazeTimeToSelect: 0
-  m_GazeTimeToSelect: 0.5
-  m_OverrideTimeToAutoDeselectGaze: 0
-  m_TimeToAutoDeselectGaze: 3
-  m_AllowGazeAssistance: 0
-  m_FirstHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstFocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastFocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Activated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Deactivated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
-  m_StartingInteractionStrengthFilters: []
-  m_TeleportationProvider: {fileID: 0}
-  m_MatchOrientation: 0
-  m_MatchDirectionalInput: 0
-  m_TeleportTrigger: 0
-  m_FilterSelectionByHitNormal: 0
-  m_UpNormalToleranceDegrees: 30
-  m_Teleporting:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1246653478
 GameObject:
   m_ObjectHideFlags: 0
@@ -8844,7 +8678,6 @@ GameObject:
   - component: {fileID: 1319311200}
   - component: {fileID: 1319311203}
   - component: {fileID: 1319311204}
-  - component: {fileID: 1319311205}
   - component: {fileID: 1319311206}
   - component: {fileID: 1319311207}
   m_Layer: 0
@@ -8915,22 +8748,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88a7795be1981e84d876835beb3983ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeline: {fileID: 1169055961}
---- !u!114 &1319311205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1319311199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c0d3e07cfc30546aa0d9d0d3db55f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  director: {fileID: 1169055961}
-  XRCameraTMP: {fileID: 0}
-  trackName: Text Track
 --- !u!82 &1319311206
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13732,6 +13549,8 @@ PrefabInstance:
     - {fileID: 8518860743329702570, guid: 30b3c262d94dd234f9a172ddbc2cf3ec, type: 3}
     - {fileID: 6354184087965428601, guid: 30b3c262d94dd234f9a172ddbc2cf3ec, type: 3}
     - {fileID: 8285121138279585412, guid: 30b3c262d94dd234f9a172ddbc2cf3ec, type: 3}
+    - {fileID: 6143450755570980394, guid: 30b3c262d94dd234f9a172ddbc2cf3ec, type: 3}
+    - {fileID: 6715258524546361824, guid: 30b3c262d94dd234f9a172ddbc2cf3ec, type: 3}
     m_RemovedGameObjects:
     - {fileID: 4606179808102698163, guid: 30b3c262d94dd234f9a172ddbc2cf3ec, type: 3}
     - {fileID: 1726377462556334755, guid: 30b3c262d94dd234f9a172ddbc2cf3ec, type: 3}
@@ -13746,16 +13565,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1758647170}
   m_SourcePrefab: {fileID: 100100000, guid: 30b3c262d94dd234f9a172ddbc2cf3ec, type: 3}
---- !u!4 &1758647167 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1654291781676584213, guid: 30b3c262d94dd234f9a172ddbc2cf3ec, type: 3}
-  m_PrefabInstance: {fileID: 1758647164}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1758647168 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1612493531008111401, guid: 30b3c262d94dd234f9a172ddbc2cf3ec, type: 3}
-  m_PrefabInstance: {fileID: 1758647164}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1758647169 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7354071244875331192, guid: 30b3c262d94dd234f9a172ddbc2cf3ec, type: 3}
@@ -13773,14 +13582,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9934af7dacee948b53a3f358efd181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredGearIDs: []
-  clockBigHands: {fileID: 1758647168}
-  clockSmallHands: {fileID: 1758647167}
-  chimeAudio: {fileID: 0}
-  fadeOutScript: {fileID: 0}
-  GearsList: []
-  GearTransforms: []
-  AudioEncouragementClip: {fileID: 0}
 --- !u!1001 &1812822217
 PrefabInstance:
   m_ObjectHideFlags: 0

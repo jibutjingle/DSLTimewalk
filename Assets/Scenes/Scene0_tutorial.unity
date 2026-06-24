@@ -1487,7 +1487,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMesh: {fileID: 359431987}
-  VFXGraph: {fileID: 1771436120}
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
@@ -2189,7 +2188,6 @@ GameObject:
   - component: {fileID: 503592701}
   - component: {fileID: 503592702}
   - component: {fileID: 503592705}
-  - component: {fileID: 503592704}
   - component: {fileID: 503592706}
   m_Layer: 0
   m_Name: Teleport Area Manager
@@ -2368,21 +2366,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &503592704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 503592699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c0d3e07cfc30546aa0d9d0d3db55f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  director: {fileID: 503592705}
-  XRCameraTMP: {fileID: 0}
-  trackName: Text Track
 --- !u!320 &503592705
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -2826,7 +2809,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMesh: {fileID: 595846663}
-  VFXGraph: {fileID: 1666758429}
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
@@ -2922,7 +2904,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMesh: {fileID: 634464476}
-  VFXGraph: {fileID: 1740699390}
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
@@ -3120,7 +3101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMesh: {fileID: 674463414}
-  VFXGraph: {fileID: 17232882}
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
@@ -3244,7 +3224,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMesh: {fileID: 692765693}
-  VFXGraph: {fileID: 578507529}
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
@@ -3326,6 +3305,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Property:
+    m_Name: Transform
+  Target: {fileID: 0}
 --- !u!114 &797186395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3338,6 +3320,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 797186394}
+  m_VisualEffect: {fileID: 797186397}
 --- !u!73398921 &797186396
 VFXRenderer:
   serializedVersion: 1
@@ -3515,7 +3501,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMesh: {fileID: 872218046}
-  VFXGraph: {fileID: 1324098793}
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
@@ -3678,7 +3663,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMesh: {fileID: 936251116}
-  VFXGraph: {fileID: 1258453434}
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
@@ -3977,7 +3961,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMesh: {fileID: 973040369}
-  VFXGraph: {fileID: 1410285336}
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
@@ -4049,7 +4032,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMesh: {fileID: 1011623284}
-  VFXGraph: {fileID: 1585963650}
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
@@ -4918,6 +4900,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Property:
+    m_Name: Transform
+  Target: {fileID: 0}
 --- !u!114 &1105204800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4930,6 +4915,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 1105204799}
+  m_VisualEffect: {fileID: 1105204802}
 --- !u!73398921 &1105204801
 VFXRenderer:
   serializedVersion: 1
@@ -5067,6 +5056,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Property:
+    m_Name: Transform
+  Target: {fileID: 0}
 --- !u!114 &1124693024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5079,6 +5071,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 1124693023}
+  m_VisualEffect: {fileID: 1124693026}
 --- !u!73398921 &1124693025
 VFXRenderer:
   serializedVersion: 1
@@ -5221,6 +5217,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Property:
+    m_Name: Transform
+  Target: {fileID: 0}
 --- !u!114 &1258453432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5233,6 +5232,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 1258453431}
+  m_VisualEffect: {fileID: 1258453434}
 --- !u!73398921 &1258453433
 VFXRenderer:
   serializedVersion: 1
@@ -5790,6 +5793,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Property:
+    m_Name: Transform
+  Target: {fileID: 0}
 --- !u!114 &1324098791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5802,6 +5808,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 1324098790}
+  m_VisualEffect: {fileID: 1324098793}
 --- !u!73398921 &1324098792
 VFXRenderer:
   serializedVersion: 1
@@ -6444,6 +6454,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Property:
+    m_Name: Transform
+  Target: {fileID: 0}
 --- !u!114 &1410285334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6456,6 +6469,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 1410285333}
+  m_VisualEffect: {fileID: 1410285336}
 --- !u!73398921 &1410285335
 VFXRenderer:
   serializedVersion: 1
@@ -6666,7 +6683,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMesh: {fileID: 1466014099}
-  VFXGraph: {fileID: 797186397}
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
@@ -6965,7 +6981,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMesh: {fileID: 1542627315}
-  VFXGraph: {fileID: 1270186410}
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
@@ -7264,7 +7279,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMesh: {fileID: 1555919815}
-  VFXGraph: {fileID: 1124693026}
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
@@ -7396,6 +7410,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Property:
+    m_Name: Transform
+  Target: {fileID: 0}
 --- !u!114 &1585963648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7408,6 +7425,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 1585963647}
+  m_VisualEffect: {fileID: 1585963650}
 --- !u!73398921 &1585963649
 VFXRenderer:
   serializedVersion: 1
@@ -7865,7 +7886,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMesh: {fileID: 1613901785}
-  VFXGraph: {fileID: 1812254522}
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
@@ -8347,6 +8367,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Property:
+    m_Name: Transform
+  Target: {fileID: 0}
 --- !u!114 &1740699388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8359,6 +8382,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 1740699387}
+  m_VisualEffect: {fileID: 1740699390}
 --- !u!73398921 &1740699389
 VFXRenderer:
   serializedVersion: 1
@@ -8764,7 +8791,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMesh: {fileID: 1263938447}
-  VFXGraph: {fileID: 1105204802}
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
@@ -8901,6 +8927,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Property:
+    m_Name: Transform
+  Target: {fileID: 0}
 --- !u!114 &1812254520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8913,6 +8942,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 1812254519}
+  m_VisualEffect: {fileID: 1812254522}
 --- !u!73398921 &1812254521
 VFXRenderer:
   serializedVersion: 1
@@ -9959,7 +9992,6 @@ GameObject:
   - component: {fileID: 2066982025}
   - component: {fileID: 2066982024}
   - component: {fileID: 2066982026}
-  - component: {fileID: 2066982027}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -10148,7 +10180,7 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 1360440233164920490, guid: a98ebd02344d01e498d41f2a351e0d30, type: 2}
     value: {fileID: 0}
-  - key: {fileID: 5143990714105870107, guid: a98ebd02344d01e498d41f2a351e0d30, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 0}
   - key: {fileID: -3941533169485254855, guid: a98ebd02344d01e498d41f2a351e0d30, type: 2}
     value: {fileID: 2066982024}
@@ -10216,21 +10248,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &2066982027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066982019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c0d3e07cfc30546aa0d9d0d3db55f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  director: {fileID: 2066982025}
-  XRCameraTMP: {fileID: 0}
-  trackName: Text Track
 --- !u!1 &2135594311
 GameObject:
   m_ObjectHideFlags: 0
@@ -11193,7 +11210,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMesh: {fileID: 31340974163692946}
-  VFXGraph: {fileID: 4256022025926075854}
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
@@ -11363,6 +11379,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Property:
+    m_Name: Transform
+  Target: {fileID: 0}
 --- !u!114 &4256022025926075853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11375,6 +11394,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 4256022025926075852}
+  m_VisualEffect: {fileID: 4256022025926075854}
 --- !u!2083052967 &4256022025926075854
 VisualEffect:
   m_ObjectHideFlags: 0
@@ -11518,6 +11541,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Property:
+    m_Name: Transform
+  Target: {fileID: 0}
 --- !u!114 &4951746663626896115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11530,6 +11556,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 4951746663626896114}
+  m_VisualEffect: {fileID: 4951746663626896116}
 --- !u!2083052967 &4951746663626896116
 VisualEffect:
   m_ObjectHideFlags: 0
@@ -12442,7 +12472,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMesh: {fileID: 4254585147448010670}
-  VFXGraph: {fileID: 4951746663626896116}
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
@@ -12490,6 +12519,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Property:
+    m_Name: Transform
+  Target: {fileID: 0}
 --- !u!114 &7295427144308066402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12502,6 +12534,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 7295427144308066401}
+  m_VisualEffect: {fileID: 7295427144308066403}
 --- !u!2083052967 &7295427144308066403
 VisualEffect:
   m_ObjectHideFlags: 0
@@ -12693,7 +12729,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMesh: {fileID: 2260874832777562951}
-  VFXGraph: {fileID: 7295427144308066403}
   dissolveRate: 0.01
   refreshRate: 0.025
   gamePlay: {fileID: 503592699}
@@ -13025,6 +13060,10 @@ PrefabInstance:
     - {fileID: 6545771417566396894, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
     - {fileID: 8505601618284999816, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
     - {fileID: 1362777177230332077, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
+    - {fileID: 3955701231560357317, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
+    - {fileID: 2097078231223991635, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
+    - {fileID: 4863140841468107171, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
+    - {fileID: 233914109400143733, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

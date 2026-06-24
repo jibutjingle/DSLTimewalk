@@ -5624,7 +5624,6 @@ GameObject:
   - component: {fileID: 1169055957}
   - component: {fileID: 1169055959}
   - component: {fileID: 1169055958}
-  - component: {fileID: 1169055960}
   m_Layer: 0
   m_Name: Gameplay Manager
   m_TagString: Untagged
@@ -6261,21 +6260,6 @@ PlayableDirector:
     value: {fileID: 1309866926}
   m_ExposedReferences:
     m_References: []
---- !u!114 &1169055960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169055949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c0d3e07cfc30546aa0d9d0d3db55f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  director: {fileID: 1169055959}
-  XRCameraTMP: {fileID: 0}
-  trackName: Text Track
 --- !u!1001 &1211089001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8343,7 +8327,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88a7795be1981e84d876835beb3983ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeline: {fileID: 1169055959}
 --- !u!82 &1319311205
 AudioSource:
   m_ObjectHideFlags: 0

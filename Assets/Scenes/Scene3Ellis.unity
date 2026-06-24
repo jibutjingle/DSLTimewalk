@@ -452,9 +452,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4538226158273673311, guid: bd752712816231640b08b964a02a9170, type: 3}
       insertIndex: -1
       addedObject: {fileID: 142100803}
-    - targetCorrespondingSourceObject: {fileID: 4538226158273673311, guid: bd752712816231640b08b964a02a9170, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 142100802}
   m_SourcePrefab: {fileID: 100100000, guid: bd752712816231640b08b964a02a9170, type: 3}
 --- !u!65 &142100795
 BoxCollider:
@@ -477,87 +474,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.110849224, y: 0.120114625, z: 0.00086025544}
   m_Center: {x: 0, y: 0.011233511, z: 0.026338128}
---- !u!114 &142100802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4538226158137897319}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38f6bf3d943ac7945842268c9ef1dca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
-  m_Colliders: []
-  m_InteractionLayers:
-    m_Bits: 2147483648
-  m_DistanceCalculationMode: 1
-  m_SelectMode: 1
-  m_FocusMode: 1
-  m_CustomReticle: {fileID: 0}
-  m_AllowGazeInteraction: 0
-  m_AllowGazeSelect: 0
-  m_OverrideGazeTimeToSelect: 0
-  m_GazeTimeToSelect: 0.5
-  m_OverrideTimeToAutoDeselectGaze: 0
-  m_TimeToAutoDeselectGaze: 3
-  m_AllowGazeAssistance: 0
-  m_FirstHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstFocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastFocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Activated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Deactivated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
-  m_StartingInteractionStrengthFilters: []
-  m_TeleportationProvider: {fileID: 0}
-  m_MatchOrientation: 0
-  m_MatchDirectionalInput: 0
-  m_TeleportTrigger: 0
-  m_FilterSelectionByHitNormal: 0
-  m_UpNormalToleranceDegrees: 30
-  m_Teleporting:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!64 &142100803
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2362,7 +2278,6 @@ GameObject:
   - component: {fileID: 1169055956}
   - component: {fileID: 1169055955}
   - component: {fileID: 1169055957}
-  - component: {fileID: 1169055959}
   m_Layer: 0
   m_Name: Gameplay Manager
   m_TagString: Untagged
@@ -2940,21 +2855,6 @@ MonoBehaviour:
   postProcessing: {fileID: 1690536067}
   newBloomIntensity: 0.1
   dimDuration: 1
---- !u!114 &1169055959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169055949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c0d3e07cfc30546aa0d9d0d3db55f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  director: {fileID: 1169055956}
-  XRCameraTMP: {fileID: 0}
-  trackName: Text Track
 --- !u!1001 &1174777818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3570,7 +3470,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88a7795be1981e84d876835beb3983ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeline: {fileID: 1169055956}
 --- !u!82 &1319311205
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4061,7 +3960,6 @@ GameObject:
   - component: {fileID: 1482590746}
   - component: {fileID: 1482590745}
   - component: {fileID: 1482590744}
-  - component: {fileID: 1482590743}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -4084,87 +3982,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 543450653566250707}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1482590743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1482590741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38f6bf3d943ac7945842268c9ef1dca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
-  m_Colliders: []
-  m_InteractionLayers:
-    m_Bits: 2147483648
-  m_DistanceCalculationMode: 1
-  m_SelectMode: 1
-  m_FocusMode: 1
-  m_CustomReticle: {fileID: 0}
-  m_AllowGazeInteraction: 0
-  m_AllowGazeSelect: 0
-  m_OverrideGazeTimeToSelect: 0
-  m_GazeTimeToSelect: 0.5
-  m_OverrideTimeToAutoDeselectGaze: 0
-  m_TimeToAutoDeselectGaze: 3
-  m_AllowGazeAssistance: 0
-  m_FirstHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstFocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastFocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Activated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Deactivated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
-  m_StartingInteractionStrengthFilters: []
-  m_TeleportationProvider: {fileID: 0}
-  m_MatchOrientation: 0
-  m_MatchDirectionalInput: 0
-  m_TeleportTrigger: 0
-  m_FilterSelectionByHitNormal: 0
-  m_UpNormalToleranceDegrees: 30
-  m_Teleporting:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!65 &1482590744
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7659,6 +7476,7 @@ PrefabInstance:
     - {fileID: 6354184087965428601, guid: 30b3c262d94dd234f9a172ddbc2cf3ec, type: 3}
     - {fileID: 8285121138279585412, guid: 30b3c262d94dd234f9a172ddbc2cf3ec, type: 3}
     - {fileID: 6143450755570980394, guid: 30b3c262d94dd234f9a172ddbc2cf3ec, type: 3}
+    - {fileID: 6715258524546361824, guid: 30b3c262d94dd234f9a172ddbc2cf3ec, type: 3}
     m_RemovedGameObjects:
     - {fileID: 4606179808102698163, guid: 30b3c262d94dd234f9a172ddbc2cf3ec, type: 3}
     - {fileID: 1726377462556334755, guid: 30b3c262d94dd234f9a172ddbc2cf3ec, type: 3}
