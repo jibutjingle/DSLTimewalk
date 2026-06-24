@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.35686275, g: 0.35686275, b: 0.35686275, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 497118366d979124fb49b60e9f83ef31, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -595,10 +595,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64f1f242c7d5a75408822e2e9ddba642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threadPrefab: {fileID: 8513732926674921903, guid: b1ea6ecda022c714f8d68b552cc472d8, type: 3}
-  _instrumentAnchor: {fileID: 46896865}
-  _joseAnchor: {fileID: 1609847199}
-  _shrinkDelaySeconds: 5
 --- !u!114 &46896883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,8 +607,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106fab9210aaada468d2b1f4f668703f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeMultiplier: 2
-  backgroundMusic: {fileID: 0}
 --- !u!1001 &49839761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1103,10 +1097,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64f1f242c7d5a75408822e2e9ddba642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threadPrefab: {fileID: 8513732926674921903, guid: b1ea6ecda022c714f8d68b552cc472d8, type: 3}
-  _instrumentAnchor: {fileID: 111491120}
-  _joseAnchor: {fileID: 1609847199}
-  _shrinkDelaySeconds: 5
 --- !u!1001 &129093861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2164,10 +2154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64f1f242c7d5a75408822e2e9ddba642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threadPrefab: {fileID: 8513732926674921903, guid: b1ea6ecda022c714f8d68b552cc472d8, type: 3}
-  _instrumentAnchor: {fileID: 261597684}
-  _joseAnchor: {fileID: 1609847199}
-  _shrinkDelaySeconds: 5
 --- !u!114 &261597698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2180,8 +2166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106fab9210aaada468d2b1f4f668703f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeMultiplier: 2
-  backgroundMusic: {fileID: 0}
 --- !u!1 &318320652
 GameObject:
   m_ObjectHideFlags: 0
@@ -4425,8 +4409,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106fab9210aaada468d2b1f4f668703f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeMultiplier: 2
-  backgroundMusic: {fileID: 0}
 --- !u!114 &586364757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4439,10 +4421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64f1f242c7d5a75408822e2e9ddba642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threadPrefab: {fileID: 8513732926674921903, guid: b1ea6ecda022c714f8d68b552cc472d8, type: 3}
-  _instrumentAnchor: {fileID: 1111278287}
-  _joseAnchor: {fileID: 1609847199}
-  _shrinkDelaySeconds: 5
 --- !u!1 &586364758 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3021117791853990674, guid: ba14a779b5cd43049944f6d15f14cfdf, type: 3}
@@ -4460,8 +4438,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106fab9210aaada468d2b1f4f668703f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeMultiplier: 2
-  backgroundMusic: {fileID: 0}
 --- !u!114 &586364760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4474,10 +4450,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64f1f242c7d5a75408822e2e9ddba642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threadPrefab: {fileID: 8513732926674921903, guid: b1ea6ecda022c714f8d68b552cc472d8, type: 3}
-  _instrumentAnchor: {fileID: 1111278287}
-  _joseAnchor: {fileID: 1609847199}
-  _shrinkDelaySeconds: 5
 --- !u!1001 &615068644
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8904,10 +8876,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64f1f242c7d5a75408822e2e9ddba642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threadPrefab: {fileID: 8513732926674921903, guid: b1ea6ecda022c714f8d68b552cc472d8, type: 3}
-  _instrumentAnchor: {fileID: 1103608224}
-  _joseAnchor: {fileID: 1609847199}
-  _shrinkDelaySeconds: 5
 --- !u!114 &1177403486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8920,8 +8888,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106fab9210aaada468d2b1f4f668703f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeMultiplier: 2
-  backgroundMusic: {fileID: 0}
 --- !u!1 &1200456651
 GameObject:
   m_ObjectHideFlags: 0
@@ -10648,19 +10614,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1326198463619697135, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
   m_PrefabInstance: {fileID: 1400991783}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1400991785 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1656236182476959361, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
-  m_PrefabInstance: {fileID: 1400991783}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1400991786 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 939125951107053599, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
-  m_PrefabInstance: {fileID: 1400991783}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1400991787 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8590395144948231718, guid: 17f8eecf5d03e264b95deb933b2f2262, type: 3}
   m_PrefabInstance: {fileID: 1400991783}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1400991788 stripped
@@ -10680,10 +10636,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64f1f242c7d5a75408822e2e9ddba642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threadPrefab: {fileID: 8513732926674921903, guid: b1ea6ecda022c714f8d68b552cc472d8, type: 3}
-  _instrumentAnchor: {fileID: 1400991785}
-  _joseAnchor: {fileID: 1609847199}
-  _shrinkDelaySeconds: 5
 --- !u!114 &1400991790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10696,10 +10648,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64f1f242c7d5a75408822e2e9ddba642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threadPrefab: {fileID: 8513732926674921903, guid: b1ea6ecda022c714f8d68b552cc472d8, type: 3}
-  _instrumentAnchor: {fileID: 1400991787}
-  _joseAnchor: {fileID: 1609847199}
-  _shrinkDelaySeconds: 5
 --- !u!114 &1400991791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10712,8 +10660,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106fab9210aaada468d2b1f4f668703f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeMultiplier: 2
-  backgroundMusic: {fileID: 0}
 --- !u!1001 &1407843673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10964,10 +10910,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64f1f242c7d5a75408822e2e9ddba642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threadPrefab: {fileID: 8513732926674921903, guid: b1ea6ecda022c714f8d68b552cc472d8, type: 3}
-  _instrumentAnchor: {fileID: 1407843674}
-  _joseAnchor: {fileID: 1609847199}
-  _shrinkDelaySeconds: 5
 --- !u!114 &1407843690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10980,8 +10922,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106fab9210aaada468d2b1f4f668703f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeMultiplier: 2
-  backgroundMusic: {fileID: 0}
 --- !u!1 &1408508109
 GameObject:
   m_ObjectHideFlags: 0
@@ -12164,10 +12104,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64f1f242c7d5a75408822e2e9ddba642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threadPrefab: {fileID: 8513732926674921903, guid: b1ea6ecda022c714f8d68b552cc472d8, type: 3}
-  _instrumentAnchor: {fileID: 1333098116}
-  _joseAnchor: {fileID: 1609847199}
-  _shrinkDelaySeconds: 5
 --- !u!114 &1572424857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12180,8 +12116,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106fab9210aaada468d2b1f4f668703f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeMultiplier: 2
-  backgroundMusic: {fileID: 0}
 --- !u!1 &1609847198
 GameObject:
   m_ObjectHideFlags: 0
@@ -12570,10 +12504,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64f1f242c7d5a75408822e2e9ddba642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threadPrefab: {fileID: 8513732926674921903, guid: b1ea6ecda022c714f8d68b552cc472d8, type: 3}
-  _instrumentAnchor: {fileID: 1103608224}
-  _joseAnchor: {fileID: 1609847199}
-  _shrinkDelaySeconds: 5
 --- !u!114 &1676811078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12586,8 +12516,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106fab9210aaada468d2b1f4f668703f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeMultiplier: 2
-  backgroundMusic: {fileID: 0}
 --- !u!1 &1778239523
 GameObject:
   m_ObjectHideFlags: 0
@@ -16511,10 +16439,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64f1f242c7d5a75408822e2e9ddba642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threadPrefab: {fileID: 8513732926674921903, guid: b1ea6ecda022c714f8d68b552cc472d8, type: 3}
-  _instrumentAnchor: {fileID: 2093949078}
-  _joseAnchor: {fileID: 1609847199}
-  _shrinkDelaySeconds: 5
 --- !u!114 &2093949092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16527,8 +16451,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106fab9210aaada468d2b1f4f668703f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeMultiplier: 2
-  backgroundMusic: {fileID: 0}
 --- !u!114 &2093949093
 MonoBehaviour:
   m_ObjectHideFlags: 0
