@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: PackageVersionLogger
   m_EditorClassIdentifier: 
   packageVersions:
-  - com.artanim.common@file:C:\Users\pflex\Documents\_git\DSLTimewalk\Packages\dependencies\com.artanim.common-9.2.3.tgz
+  - com.artanim.common@file:D:\UnityProjects\DSLTimewalk\Packages\dependencies\com.artanim.common-9.2.3.tgz
     version 9.2.3
-  - com.dreamscape.coresdk@file:C:\Users\pflex\Documents\_git\DSLTimewalk\Packages\dependencies\com.dreamscape.coresdk-9.2.3.tgz
+  - com.dreamscape.coresdk@file:D:\UnityProjects\DSLTimewalk\Packages\dependencies\com.dreamscape.coresdk-9.2.3.tgz
     version 9.2.3
-  - com.dreamscape.haptics@file:C:\Users\pflex\Documents\_git\DSLTimewalk\Packages\dependencies\com.dreamscape.haptics-9.2.3.tgz
+  - com.dreamscape.haptics@file:D:\UnityProjects\DSLTimewalk\Packages\dependencies\com.dreamscape.haptics-9.2.3.tgz
     version 9.2.3
-  - com.dreamscape.voip@file:C:\Users\pflex\Documents\_git\DSLTimewalk\Packages\dependencies\com.dreamscape.voip-9.2.3.tgz
+  - com.dreamscape.voip@file:D:\UnityProjects\DSLTimewalk\Packages\dependencies\com.dreamscape.voip-9.2.3.tgz
     version 9.2.3
   - com.meta.xr.sdk.audio@60.0.0 version 60.0.0
   - com.unity.2d.sprite@1.0.0 version 1.0.0
@@ -40,6 +40,7 @@ MonoBehaviour:
   - com.unity.timeline@1.7.6 version 1.7.6
   - com.unity.toolchain.win-x86_64-linux-x86_64@2.0.6 version 2.0.6
   - com.unity.ugui@1.0.0 version 1.0.0
+  - com.unity.visualeffectgraph@14.0.11 version 14.0.11
   - com.unity.visualscripting@1.9.4 version 1.9.4
   - com.unity.xr.legacyinputhelpers@2.1.11 version 2.1.11
   - com.unity.xr.openxr@1.11.0 version 1.11.0
@@ -78,13 +79,13 @@ MonoBehaviour:
   - com.unity.inputsystem@1.11.2 version 1.11.2
   - com.unity.xr.core-utils@2.3.0 version 2.3.0
   - com.unity.xr.management@4.4.0 version 4.4.0
+  - com.unity.shadergraph@14.0.11 version 14.0.11
+  - com.unity.render-pipelines.core@14.0.11 version 14.0.11
   - com.unity.sysroot@2.0.7 version 2.0.7
   - com.unity.sysroot.linux-x86_64@2.0.6 version 2.0.6
   - com.unity.ext.nunit@1.0.6 version 1.0.6
   - com.unity.mathematics@1.2.6 version 1.2.6
   - com.unity.burst@1.8.18 version 1.8.18
-  - com.unity.render-pipelines.core@14.0.11 version 14.0.11
-  - com.unity.shadergraph@14.0.11 version 14.0.11
   - com.unity.render-pipelines.universal-config@14.0.10 version 14.0.10
   - com.unity.services.core@1.12.5 version 1.12.5
   - com.unity.editorcoroutines@1.0.0 version 1.0.0
