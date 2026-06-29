@@ -9,25 +9,29 @@ using System;
 
 public class PuzzleGameManager : MonoBehaviour
 {
-    [SerializeField]
-    private List<GameObject> puzzlePieces;
-    [SerializeField]
-    private List<GameObject> staticPuzzlePieces;
-    [SerializeField]
-    private GameObject snapZoneParent;
-    // [SerializeField]
-    // private GameObject puzzleButton;
-    [SerializeField]
-    private PlayableDirector JosePuzzleWaitPD;
-    [SerializeField]
-    private PlayableDirector eleanorPD;
-    [SerializeField]
-    private GameObject outlines;
-    [SerializeField]
-    private AudioClip soundConfirm;
+    [SerializeField] private List<GameObject> puzzlePieces;
+    [SerializeField] private GameObject staticPuzzlePieces;
+    [SerializeField] private GameObject snapZoneParent;
+    [SerializeField] private PlayableDirector JosePuzzleWaitPD;
+    [SerializeField] private PlayableDirector eleanorPD;
+    [SerializeField] private GameObject outlines;
+    [SerializeField] private AudioClip soundConfirm;
+    [SerializeField] private GameObject completedPuzzle;
+    private OutlineDraw outlineDraw;
 
     private bool eleanorPDpaused = false;
     private bool josePuzzlePDPaused = true;
+    private bool puzzleCompleted = false;
+
+    void OnEnable()
+    {
+        SubscribeToPiecePlacedEvents();
+    }
+
+    void OnDisable()
+    {
+        UnsubscribeFromPiecePlacedEvents();
+    }
 
     public void TogglePauseLocal()
     {
@@ -38,47 +42,111 @@ public class PuzzleGameManager : MonoBehaviour
             JosePuzzleWaitPD.Play();
             eleanorPDpaused = true;
             josePuzzlePDPaused = false;
-            LayerMask defaultLayer = LayerMask.NameToLayer("KeepOriginal");
             foreach (GameObject piece in puzzlePieces)
             {
-                // if (IsServer)
-                // {
-                //     piece.layer = defaultLayer;
-                //     piece.GetComponent<Collider>().enabled = true;
-                // }
-                // piece.layer = defaultLayer;
-                // piece.GetComponent<Collider>().enabled = true;
-                MovePiecesUpServerRpc(.5f);
+                MovedPiecesUp(.5f);
                 // Debug.Log("Moved piece: " + piece.name + "to new position: " + piece.transform.localPosition);
             }
 
-            foreach (GameObject piece in staticPuzzlePieces)
+            outlineDraw = snapZoneParent.GetComponent<OutlineDraw>();
+            if (outlineDraw != null)
             {
-                piece.layer = defaultLayer;
-                piece.GetComponent<Collider>().enabled = true;
+                outlineDraw.enabled = true;
             }
 
-            // GuideFromZonesDraw guideFromZonesDraw = snapZoneParent.GetComponent<GuideFromZonesDraw>();
-            // if (guideFromZonesDraw != null)
-            // {
-            //     guideFromZonesDraw.enabled = true;
-            // }
-
-            // puzzleButton.SetActive(true);
             outlines.SetActive(true);
+
+            if (AreAllPiecesPlaced())
+                ResumeEleanorAfterPuzzleComplete();
         }
     }
 
-    // [ServerRpc(RequireOwnership = false)]
-    public void MovePiecesUpServerRpc(float newY)
+    void SubscribeToPiecePlacedEvents()
     {
-        MovePiecesUpClientRpc(newY);
+        foreach (GameObject piece in puzzlePieces)
+        {
+            if (piece == null)
+                continue;
+
+            PlaceableObject placeable = piece.GetComponent<PlaceableObject>();
+            if (placeable != null)
+                placeable.onPlaced.AddListener(OnPiecePlaced);
+        }
     }
 
-    // [ClientRpc]
-    private void MovePiecesUpClientRpc(float newY)
+    void UnsubscribeFromPiecePlacedEvents()
     {
-        MovedPiecesUp(newY);
+        foreach (GameObject piece in puzzlePieces)
+        {
+            if (piece == null)
+                continue;
+
+            PlaceableObject placeable = piece.GetComponent<PlaceableObject>();
+            if (placeable != null)
+                placeable.onPlaced.RemoveListener(OnPiecePlaced);
+        }
+    }
+
+    void OnPiecePlaced()
+    {
+        if (!eleanorPDpaused || puzzleCompleted)
+            return;
+
+        if (AreAllPiecesPlaced())
+            ResumeEleanorAfterPuzzleComplete();
+    }
+
+    bool AreAllPiecesPlaced()
+    {
+        if (puzzlePieces == null || puzzlePieces.Count == 0)
+            return false;
+
+        foreach (GameObject piece in puzzlePieces)
+        {
+            if (piece == null)
+                return false;
+
+            PlaceableObject placeable = piece.GetComponent<PlaceableObject>();
+            if (placeable == null || !placeable.IsPlaced)
+                return false;
+        }
+
+        return true;
+    }
+
+    void ResumeEleanorAfterPuzzleComplete()
+    {
+        if (puzzleCompleted || !eleanorPDpaused)
+            return;
+
+        puzzleCompleted = true;
+
+        if (JosePuzzleWaitPD != null)
+            JosePuzzleWaitPD.Pause();
+
+        if (eleanorPD != null)
+            eleanorPD.Resume();
+
+        eleanorPDpaused = false;
+        josePuzzlePDPaused = true;
+
+        if (outlineDraw != null)
+            outlineDraw.enabled = false;
+
+        if (outlines != null)
+            outlines.SetActive(false);
+
+        if (completedPuzzle != null)
+            completedPuzzle.SetActive(true);
+
+        foreach (GameObject piece in puzzlePieces)
+        {
+            piece.SetActive(false);
+        }
+
+        if (staticPuzzlePieces != null)
+            staticPuzzlePieces.SetActive(false);
+
     }
 
     private void MovedPiecesUp(float newY)
@@ -91,77 +159,7 @@ public class PuzzleGameManager : MonoBehaviour
         }
     }
 
-    public void TogglePause()
-    {
-        // if (IsServer)
-        // {
-        if (eleanorPD == null)
-        {
-            Debug.LogWarning("PlayableDirector is not assigned!");
-            return;
-        }
-        TogglePauseServerRpc();
-        // }
-    }
-
-    // [ServerRpc(RequireOwnership = false)]
-    private void TogglePauseServerRpc()
-    {
-        TogglePauseClientRpc();
-    }
-
-    // [ClientRpc]
-    private void TogglePauseClientRpc()
-    {
-        if (!eleanorPDpaused && JosePuzzleWaitPD)
-        {
-            // Play the Puzzle Game Timeline on jose GO & pause Eleanor's
-            eleanorPD.Pause();
-            JosePuzzleWaitPD.Play();
-            eleanorPDpaused = true;
-            josePuzzlePDPaused = false;
-            LayerMask defaultLayer = LayerMask.NameToLayer("KeepOriginal");
-            foreach (GameObject piece in puzzlePieces)
-            {
-                piece.layer = defaultLayer;
-                piece.GetComponent<Collider>().enabled = true;
-            }
-
-            // GuideFromZonesDraw guideFromZonesDraw = snapZoneParent.GetComponent<GuideFromZonesDraw>();
-            // if (guideFromZonesDraw != null)
-            // {
-            //     guideFromZonesDraw.enabled = true;
-            // }
-
-            // puzzleButton.SetActive(true);
-            outlines.SetActive(true);
-        }
-        else if (eleanorPDpaused && !josePuzzlePDPaused)
-        {
-            // Pause the Timeline
-            JosePuzzleWaitPD.Pause();
-            eleanorPD.Play();
-            josePuzzlePDPaused = true;
-            eleanorPDpaused = false;
-        }
-    }
-
     public void RemovePuzzleGame()
-    {
-        // if (IsServer)
-        // {
-        RemovePuzzleGameServerRpc();
-        // }
-    }
-
-    // [ServerRpc(RequireOwnership = false)]
-    public void RemovePuzzleGameServerRpc()
-    {
-        RemovePuzzleGameClientRpc();
-    }
-
-    // [ClientRpc]
-    public void RemovePuzzleGameClientRpc()
     {
         if (snapZoneParent != null)
         {
