@@ -13582,6 +13582,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9934af7dacee948b53a3f358efd181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  requiredGearIDs: []
+  clockBigHands: {fileID: 0}
+  clockSmallHands: {fileID: 0}
+  chimeAudio: {fileID: 0}
+  fadeOutScript: {fileID: 0}
+  GearsList: []
+  GearTransforms: []
+  AudioEncouragementClip: {fileID: 0}
 --- !u!1001 &1812822217
 PrefabInstance:
   m_ObjectHideFlags: 0
