@@ -13030,9 +13030,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8241ceaa72068fe469d394a4ba2da2e8, type: 3}
   m_Name: HapticAudio
   m_EditorClassIdentifier: 
-  WaveName: Rumble
+  WaveName: 
   Clip: {fileID: 0}
-  AudioBankEntry: {fileID: 0}
+  AudioBankEntry: {fileID: 5173977925991562072, guid: 7b230c2203ab58244ba7d8ec01e0dd80, type: 2}
   Volume: 1
   VolumeCurve:
     serializedVersion: 2
@@ -13060,7 +13060,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   LoopClip: 0
   Persistent: 0
-  AlwaysPlay: 0
+  AlwaysPlay: 1
   MutedElements: []
   UseLocalStationId: 0
   StationId: 

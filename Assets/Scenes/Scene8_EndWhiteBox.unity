@@ -11378,6 +11378,8 @@ GameObject:
   - component: {fileID: 1572424850}
   - component: {fileID: 1572424856}
   - component: {fileID: 1572424857}
+  - component: {fileID: 1572424858}
+  - component: {fileID: 1572424859}
   m_Layer: 0
   m_Name: Top drum
   m_TagString: Untagged
@@ -11580,6 +11582,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 106fab9210aaada468d2b1f4f668703f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1572424858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572424848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e3b8280856bd74d8470aba75e091ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 8f4c2d19-7b6a-4c11-9f3e-2a8d5c1b4e70
+  MuteOnServer: 1
+  AudioClips:
+  - {fileID: 8300000, guid: a5e5b02187211d5419d1af9ed3eb4dfa, type: 3}
+  - {fileID: 8300000, guid: 0213bf58285bcbe45ae79c249ee27ac5, type: 3}
+  - {fileID: 8300000, guid: ef4f0674fd6765544a62d97711c89a14, type: 3}
+  PlayOnAwake: 0
+  AutoPlayIndex: 0
+  AutoPlayLoop: 0
+  DefaultFadeTime: 0
+--- !u!114 &1572424859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572424848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e411bce8bdf2c9429843a011ee0a453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectId: 3c7e9a52-1d4f-4b88-a6c2-5f9e0d3a7b18
+  SyncMode: 2
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTriggerWithArg:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1609847198
 GameObject:
   m_ObjectHideFlags: 0
