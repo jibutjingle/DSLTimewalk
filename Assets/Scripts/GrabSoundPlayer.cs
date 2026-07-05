@@ -5,6 +5,17 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class GrabSoundPlayer : MonoBehaviour
 {
+    public enum AudioPlayEvent
+    {
+        Pickup,
+        Placement,
+        Both
+    }
+
+    [Header("Playback")]
+    [SerializeField] AudioPlayEvent playOn = AudioPlayEvent.Both;
+
+    [Header("References")]
     [SerializeField] DreamscapeGrabbable grabbable;
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip placementClip;
@@ -67,18 +78,23 @@ public class GrabSoundPlayer : MonoBehaviour
 
         if (PlaceableObjectNetworkState.IsFree(previous) && PlaceableObjectNetworkState.IsHeld(newValue))
         {
-            PlayGrabAudio();
+            if (playOn == AudioPlayEvent.Pickup || playOn == AudioPlayEvent.Both)
+                PlayGrabAudio();
             return;
         }
 
         if (PlaceableObjectNetworkState.IsHeld(previous) && PlaceableObjectNetworkState.IsFree(newValue))
         {
-            StopAudio();
+            if (playOn == AudioPlayEvent.Pickup || playOn == AudioPlayEvent.Both)
+                StopAudio();
             return;
         }
 
         if (!PlaceableObjectNetworkState.IsPlaced(previous) && PlaceableObjectNetworkState.IsPlaced(newValue))
-            PlayPlacementAudio();
+        {
+            if (playOn == AudioPlayEvent.Placement || playOn == AudioPlayEvent.Both)
+                PlayPlacementAudio();
+        }
     }
 
     void PlayGrabAudio()

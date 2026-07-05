@@ -2593,18 +2593,6 @@ MonoBehaviour:
   IsSource: 0
   UseSmoothing: 0
   <SyncedTransformSmoothingSO>k__BackingField: {fileID: 0}
---- !u!114 &337222807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 337222805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e59167d2554e9a448d81c7dd0b79edb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &337222808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5636,18 +5624,6 @@ MonoBehaviour:
   IsSource: 0
   UseSmoothing: 0
   <SyncedTransformSmoothingSO>k__BackingField: {fileID: 0}
---- !u!114 &1274913964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1274913962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e59167d2554e9a448d81c7dd0b79edb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1274913965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7208,7 +7184,7 @@ GameObject:
   - component: {fileID: 1897458038}
   - component: {fileID: 1897458037}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: CylinderFlooring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7539,18 +7515,6 @@ MonoBehaviour:
   IsSource: 0
   UseSmoothing: 0
   <SyncedTransformSmoothingSO>k__BackingField: {fileID: 0}
---- !u!114 &1993019455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1993019453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e59167d2554e9a448d81c7dd0b79edb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1993019456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8382,9 +8346,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1361738681147133447, guid: da99ee2793733f04c9100f4860254988, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6051092647494404786}
-    - targetCorrespondingSourceObject: {fileID: 1361738681147133447, guid: da99ee2793733f04c9100f4860254988, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6051092647494404785}
     - targetCorrespondingSourceObject: {fileID: 1361738681147133447, guid: da99ee2793733f04c9100f4860254988, type: 3}
       insertIndex: -1
@@ -8938,9 +8899,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5488350412921706047, guid: 58e2b4fac7ff88244b63f8af9ccd6d52, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 337222807}
-    - targetCorrespondingSourceObject: {fileID: 5488350412921706047, guid: 58e2b4fac7ff88244b63f8af9ccd6d52, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 337222806}
     - targetCorrespondingSourceObject: {fileID: 5488350412921706047, guid: 58e2b4fac7ff88244b63f8af9ccd6d52, type: 3}
       insertIndex: -1
@@ -9212,18 +9170,6 @@ MonoBehaviour:
   IsSource: 0
   UseSmoothing: 0
   <SyncedTransformSmoothingSO>k__BackingField: {fileID: 0}
---- !u!114 &6051092647494404786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6051092647494404784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e59167d2554e9a448d81c7dd0b79edb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6051092647494404787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9604,9 +9550,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1115225888568545369, guid: 841f3d38b61579e4a8eed114b78e7c52, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1993019455}
-    - targetCorrespondingSourceObject: {fileID: 1115225888568545369, guid: 841f3d38b61579e4a8eed114b78e7c52, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1993019454}
     - targetCorrespondingSourceObject: {fileID: 1115225888568545369, guid: 841f3d38b61579e4a8eed114b78e7c52, type: 3}
       insertIndex: -1
@@ -9893,9 +9836,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3105570202011106583, guid: f8f1cb49c6ea51e45a60111076826572, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1274913964}
     - targetCorrespondingSourceObject: {fileID: 3105570202011106583, guid: f8f1cb49c6ea51e45a60111076826572, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1274913963}
