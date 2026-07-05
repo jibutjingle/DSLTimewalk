@@ -1,6 +1,5 @@
 using UnityEngine;
 
-[RequireComponent(typeof(DreamscapeGrabbable))]
 [RequireComponent(typeof(AudioSource))]
 public class ShakeVolumeController : MonoBehaviour
 {
@@ -11,62 +10,81 @@ public class ShakeVolumeController : MonoBehaviour
     [SerializeField] float maxVolume = 1f;
     [SerializeField] float shakeThreshold = 2f;
 
-    bool _wasHeldLocally;
+    Vector3 _lastPosition;
+    bool _hasLastPosition;
 
     void Awake()
     {
-        if (grabbable == null)
-            grabbable = GetComponent<DreamscapeGrabbable>();
-
         if (audioSource == null)
             audioSource = GetComponent<AudioSource>();
+
+        if (grabbable == null)
+            grabbable = GetComponent<DreamscapeGrabbable>();
 
         if (audioSource != null)
             audioSource.playOnAwake = false;
     }
 
+    void OnEnable()
+    {
+        _hasLastPosition = false;
+    }
+
     void Update()
     {
-        if (grabbable == null || audioSource == null || audioSource.clip == null)
+        if (audioSource == null || audioSource.clip == null)
             return;
 
-        bool heldLocally = grabbable.IsHeldByLocalPlayer;
-
-        if (!heldLocally)
+        if (grabbable != null && (grabbable.IsPlacementLocked || grabbable.IsPlaced))
         {
-            if (_wasHeldLocally)
-                StopShakeAudio();
-
-            _wasHeldLocally = false;
+            StopShakeAudio();
+            _hasLastPosition = false;
             return;
         }
 
-        if (!_wasHeldLocally)
-            StartShakeAudio();
+        Vector3 position = transform.position;
 
-        _wasHeldLocally = true;
+        if (!_hasLastPosition || Time.deltaTime <= 0f)
+        {
+            _lastPosition = position;
+            _hasLastPosition = true;
+            return;
+        }
 
-        float shakeSpeed = grabbable.CurrentHandShakeSpeed;
-        float intensity = shakeSpeed >= shakeThreshold ? shakeSpeed - shakeThreshold : 0f;
-        audioSource.volume = Mathf.Clamp(intensity * sensitivity, 0f, maxVolume);
+        float shakeIntensity = (position - _lastPosition).magnitude / Time.deltaTime;
+        _lastPosition = position;
+
+        if (shakeIntensity < shakeThreshold)
+            shakeIntensity = 0f;
+
+        ApplyVolume(Mathf.Clamp(shakeIntensity * sensitivity, 0f, maxVolume));
     }
 
     void OnDisable()
     {
         StopShakeAudio();
-        _wasHeldLocally = false;
+        _hasLastPosition = false;
     }
 
-    void StartShakeAudio()
+    void ApplyVolume(float volume)
     {
-        audioSource.volume = 0f;
+        audioSource.volume = volume;
 
-        if (!audioSource.isPlaying)
-            audioSource.Play();
+        if (volume > 0f)
+        {
+            if (!audioSource.isPlaying)
+                audioSource.Play();
+            return;
+        }
+
+        StopShakeAudio();
     }
 
     void StopShakeAudio()
     {
+        if (audioSource == null)
+            return;
+
         if (audioSource.isPlaying)
             audioSource.Stop();
 
